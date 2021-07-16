@@ -1,0 +1,140 @@
+.teams{
+   padding: 50px 0;
+   
+}
+.teamNav {
+    display: flex;
+   
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.teamNav img {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.teamNav .nav-link {
+    position: relative;
+    height: 90px;
+    width: 90px;
+  border-radius: 999px;
+    transition: 0.5s;
+  
+}
+
+.link1 > .nav-link {
+    border: 4px solid #8698a7;
+    margin: 10px;
+}
+.link2> .nav-link {
+    border: 4px solid #848a99;
+    margin: 10px;
+}
+ 
+
+.link1 > a:hover, 
+.link1 > .nav-link.active {
+    background: var(--span-color);
+    color:#fce1ff;
+}
+.link2> a:hover, 
+.link2 > .nav-link.active {
+    background: var(--span-color);
+    color:#fce1ff;
+
+}
+ .team_card{
+   
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+   
+    place-items: center;
+ }
+
+/* Pricing Card Component Design */
+ 
+.cardContents {
+    box-shadow: 1px 0 50px rgb(0 0 0 / 9%);
+    border-radius: 6px;
+    transition: all 1s;
+  
+    padding: 1rem 2rem;
+    margin-top: 2.5rem;
+    
+}
+
+ 
+.cardContent {
+    text-align: center;
+    border-bottom: 1px solid rgba(119, 119, 119, 0.322);
+   
+}
+.cardContent>img{
+  width: 150px;
+  height:150px;
+  border-radius: 50%;
+}
+.cardContent h4 {
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+   
+}
+.cardContent .position{
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.cardContent .phone{
+    font-weight: 400;
+ 
+    
+}
+
+.cardContent .phone span{
+    color: var(--primary-color);
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+.social-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
+}
+.social-links>a{
+    font-size: 32px;
+    padding: 10px;
+}
+ 
+.social-links .github{
+   background: transparent;
+   color: black;
+   
+}
+.social-links .linkedin{
+   background: transparent;
+   color: #0077b5;
+   
+}
+ 
+ 
+ 
+
+@media (max-width: 880px) {
+    .teamNav {
+        display: flex;
+        
+    }
+}

@@ -1,0 +1,12 @@
+.subFooter{
+    background: var(--primary-color);
+    color: #fff;
+}
+/* #000099 */
+.copyRight> a{
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    color: #fff;
+}

@@ -1,0 +1,57 @@
+.contact {
+    padding: 7rem 0 2rem;
+    overflow: hidden;
+}
+.subTitle {
+    margin: 0.5rem 0 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.6rem;
+    text-transform: uppercase;
+}
+.subTitle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100px;
+    border-radius: 70px;
+    height: 4px;
+    background: var(--primary-color);
+}
+
+.contactForm {
+    padding: 1rem;
+}
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 1rem 0.8rem;
+    border-radius: 0.5rem;
+    border: 1px solid #bebebe71;
+    color: #000;
+}
+.contactForm input:focus,
+.contactForm textarea:focus {
+    outline: none !important;
+    border: 1px solid var(--primary-color);
+    background-color: rgba(211, 230, 241, 0.815);
+}
+.contactForm textarea {
+    height: 150px;
+}
+.contactLeft{
+    background-repeat: no-repeat;
+    background-position: center center;
+    -ms-background-size: contain;
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+     background-size: contain;
+}
+
+ 
+  

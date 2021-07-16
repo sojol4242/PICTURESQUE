@@ -1,0 +1,70 @@
+.checkOut {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+
+}
+ 
+.serviceDetails {
+  color: #fff;
+  background: var(--primary-color);
+
+  
+}
+.serviceDetails > h1,h3 {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+.serviceDetails > p {
+  font-size: 18px;
+  padding: 10px 0;
+}
+.billingForm {
+  background: var(--span-color);
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.233);
+  
+
+}
+.billingForm > h2 {
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.billingForm input {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid #bebebe71;
+  color: #000;
+}
+.billingForm input:focus {
+  outline: none !important;
+  border: 1px solid var(--primary-color);
+  background-color: rgba(211, 230, 241, 0.815);
+}
+.checkBtn {
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.3em;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  padding: 6px 36px;
+  background: var(--primary-color);
+  color: #fff;
+}
+.cardElement {
+  border: 1px solid #fff;
+  border-radius: 6px;
+  padding: 10px 5px;
+  background: #fff;
+  color: var(--primary-color);
+}

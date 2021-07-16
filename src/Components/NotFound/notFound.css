@@ -1,0 +1,19 @@
+.notFound{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    height: 100vh;
+    width: 100vw;
+ }
+.bgError{
+    background-image: url(https://i.ibb.co/PwcrFMZ/43391-404-error-page-not-found-confused-robot.gif );
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+}
+
+ 

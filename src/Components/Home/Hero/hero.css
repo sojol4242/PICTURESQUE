@@ -1,0 +1,97 @@
+
+
+.hero {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  /* background: url("../../../images/undraw_moments_0y20.svg");
+  position: relative; */
+}
+.hero::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  background: url("https://i.ibb.co/SwgdfPB/undraw-videographer-nnc7.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -ms-background-size: contain;
+  -o-background-size: contain;
+  -moz-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+
+.hero-content {
+  position: absolute;
+  padding: 1rem;
+  text-align: center;
+  opacity: 1;
+  border: 2px solid rgba(204, 204, 204, 0.123);
+  border-radius: 10px;
+  top: 8%;
+}
+
+.hero-title {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 800;
+
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+.hero-title-span {
+  font-size: 40px;
+  font-weight: 800;
+  /* color: rgb(11, 236, 150); */
+  color: var(--span-color);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.hero-words {
+  font-size: 18px;
+  line-height: 1.5;
+  color:var(--primary-color);
+  margin: 0.5rem 0 1rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 50px;
+  
+}
+.hero-btn {
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.3em;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  padding: 6px 36px;
+  background: var(--primary-color);
+  color: #fff;
+  
+}
+
+@media (max-width: 780px) {
+  .hero{
+    height: 100vh;
+  }
+  .hero-content {
+    text-align: justify;
+    top: 10%;
+  }
+  .hero-title-span {
+    font-size: 24px;
+  }
+  .hero-title {
+    font-size: 18px;
+  }
+  .hero-words {
+    font-size: 16px;
+  }
+}
