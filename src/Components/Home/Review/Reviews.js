@@ -1,65 +1,91 @@
-import React from 'react';
-
+import React, { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper.min.css";
+import "swiper/components/pagination/pagination.min.css";
+import SwiperCore, { Autoplay, Pagination } from "swiper/core";
+import "./review.css";
+import Review from "./Review";
+ 
+SwiperCore.use([  Pagination, Autoplay]);
 const Reviews = () => {
-    return (
-        <section id="review" className="container-fluid">
-        {/* <div className="row my-5">
-        <div className="services_head col-md-12 text-center m-auto">
-          <h2 className="title">
-            {" "}
-            <span>Our</span> Teams
-          </h2>
+  const [reviews, setReviews] = useState([]);
+
+  useEffect(() => {
+    fetch("https://photography-app-2021.herokuapp.com/getReview")
+      .then((res) => res.json())
+      .then((data) => {
+        setReviews(data);
+      });
+  }, []);
+
+  return (
+    <section id="reviews" className="container-fluid">
+       <div className="row">
+            <div className="review_head col-md-12 text-center mx-auto">
+              <h2 className="title">
+                {" "}
+                <span>What clients</span> say about us
+              </h2>
+            </div>
+          </div>
+      {reviews.length > 0 ? (
+        <>
+         
+          <div className="review py-5">
+            <Swiper
+              autoplay={{
+                delay: 5000,
+                disableOnInteraction: false,
+              }}
+              slidesPerView={"auto"}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 3,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+              }}
+           
+              effect={"coverflow"}
+              grabCursor={true}
+              centeredSlides={true}
+              coverflowEffect={{
+                rotate: 50,
+                stretch:1,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+              }}
+            
+              className="container"
+            >
+              
+              {reviews.map((rev,i) => (
+                <SwiperSlide>
+                <Review rev={rev} i={i}/>
+              </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </>
+      ) : (
+        <div className="container d-flex justify-content-center align-items-center">
+          <img
+            src="https://i.ibb.co/wYTXbJs/Ripple-1-7s-307px.gif"
+            alt="loader"
+            style={{ height: "200px", background: "w" }}
+          />
         </div>
-      </div>
-      <div className="container">
-      <Tab.Container defaultActiveKey="1"> 
-                    <Row>
-                        <Col md={10} className="mx-auto">
-                            <Nav className="pricingNav">
-                                <Nav.Item className="priceLink1">
-                                    <Nav.Link eventKey="1">
-                                        <img src={`${sPic1}`} alt="" />
-                                    </Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item className="priceLink2">
-                                    <Nav.Link eventKey="2">
-                                        <img src={`${sPic2}`} alt="" />
-                                    </Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item className="priceLink3">
-                                    <Nav.Link eventKey="3">
-                                        <img src={`${sPic3}`} alt="" />
-                                    </Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item className="priceLink4">
-                                    <Nav.Link eventKey="4">
-                                        <img src={`${sPic4}`} alt="" />
-                                    </Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item className="priceLink5">
-                                    <Nav.Link eventKey="5">
-                                        <img src={`${sPic5}`} alt="" />
-                                    </Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item className="priceLink6">
-                                    <Nav.Link eventKey="6">
-                                        <img src={`${sPic6}`} alt="" />
-                                    </Nav.Link>
-                                </Nav.Item>
-                            </Nav>
-                       </Col>
-                        <Tab.Content>
-                        {
-                            PricingData.length === 0 ?
-                            <div className="spinner text-center mt-3"><Spinner/></div>:
-                            PricingData.map((data, index) => <PricingCard id={index} data={data} key={index}/>)
-                        }
-                        </Tab.Content>
-                    </Row>
-                </Tab.Container>
-      </div> */}
+      )}
     </section>
-    );
+  );
 };
 
 export default Reviews;

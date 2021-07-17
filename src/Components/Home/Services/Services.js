@@ -22,7 +22,7 @@ const Services = () => {
 
   return (
     <section id="services" className="container-fluid">
-      <div className="row my-5">
+      <div className="row">
         <div className="services_head col-md-12 text-center m-auto">
           <h2 className="title">
             {" "}
@@ -31,7 +31,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="services">
+      <div className="py-5">
         <Swiper
           slidesPerView={"auto"}
           breakpoints={{

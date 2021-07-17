@@ -11,10 +11,10 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Header = () => {
-  const { user } = useContext(UserContext)
+  const { user } = useContext(UserContext);
   console.log(user);
-  const profile=user.img;
-  
+  const profile = user.img;
+
   const [open, setOpen] = useState(false);
   const [isSticky, setSticky] = useState(false);
   useEffect(() => {
@@ -78,10 +78,10 @@ const Header = () => {
           </Nav.Item>
           <Nav.Item>
             <Nav.Link
-              href="#testimonial"
+              href="#reviews"
               className={isSticky ? "nav-link-change" : "nav-link"}
             >
-              Testimonials
+              Reviews
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
@@ -118,31 +118,31 @@ const Header = () => {
         <Nav className="ml-auto mainNav" activeKey="/home">
           <Nav.Item className="userProfile">
             {user.email ? (
-           
-              <img src={profile} alt={user.name}   onClick={() => {
-                 
-                setOpen(!open);
-              }} className="avatar"/>
+              <img
+                src={profile}
+                alt={user.name}
+                onClick={() => {
+                  setOpen(!open);
+                }}
+                className="avatar"
+              />
             ) : (
               <Link to="/auth">
-                  <motion.button
-                        whileHover={{
-                          scale: 1.01,
-                          textShadow: "0px 0px 8px rgb(255,255,255)",
-                          boxShadow: "0px 0px 8px rgb(255,255,255)",
-                        }}
-                        className="loginBtn"
-                      >
-                        Log In
-                      </motion.button>
-                
+                <motion.button
+                  whileHover={{
+                    scale: 1.01,
+                    textShadow: "0px 0px 8px rgb(255,255,255)",
+                    boxShadow: "0px 0px 8px rgb(255,255,255)",
+                  }}
+                  className="loginBtn"
+                >
+                  Log In
+                </motion.button>
               </Link>
             )}
           </Nav.Item>
 
-          {
-            open && <UserProfilePopUp/>
-          }
+          {open && <UserProfilePopUp />}
           {/* <Nav.Item>
                         {
                         user.email ? 

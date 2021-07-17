@@ -14,58 +14,76 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # PICTURESQUE
+
+<h4>Project name :  <small>Picturesque</small></h4>
+
+
+<h4>Technology Used : (FrontEND) </h4>
+
+<ul>
+<li>React.js</li>
+
+
+<li>Bootstrap</li>
+
+<li>Font awesome</li>
+
+<li>A little bit of framer motion</li>
+
+<li>CSS</li>
+
+</ul>
+<h4>Technology Used : (BackEND) </h4>
+
+<ul>
+<li>Mongodb for database</li>
+
+
+<li>Node.js</li>
+
+<li>Express.js</li>
+
+
+</ul>
+
+<h5>Motive : </h5>
+<ul>
+<li>Practice MERN Fundamental</li>
+
+<li>Deploy in Firebase & Heroku</li>
+
+<li>React props,components,hooks,Context API</li>
+
+<li>Firebase Authentication</li>
+
+</ul>
+<h5>I added this features : </h5>
+<ul>
+
+<Li>our works section </li>
+<Li>our clients section</li>
+<Li>Add transition at navbar</li>
+<li>Loading spiner</li>
+
+
+</ul>
+
+<!-- Client Side repo : https://github.com/Porgramming-Hero-web-course/complete-website-client-sojol4242
+Server Side repo : https://github.com/Porgramming-Hero-web-course/complete-website-server-sojol4242
+live site : https://photography-2021.web.app/ -->
+
+<strong>project live site - </strong> <a href="https://photography-2021.web.app/">Live</a> <br/>
+<strong>BackEnd repo - </strong> <a href="https://github.com/Porgramming-Hero-web-course/complete-website-server-sojol4242">Backend</a>
+
+<h3>project-screenshot</h3>
+<!-- 
+https://i.ibb.co/vqVSJL1/Screenshot-178.png
+ -->
+<h5>Home-page</h5>
+<img src="https://i.ibb.co/J3Rwy72/Screenshot-179.png" alt="project-screenshot-home"/>
+<h5>Admin-form : Admin can add a new service for the company</h5>
+<img src="https://i.ibb.co/x1zM7z9/Screenshot-177.png" alt="project-screenshot-admin"/>
+
+
+<h6>And many more....</h6>

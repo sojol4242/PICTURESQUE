@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <UserContext.Provider value={{user, setUser}}>
-      <ScrollTop />
+      
       <Router>
         <Suspense fallback={<PreLoader />}>
           <Switch>

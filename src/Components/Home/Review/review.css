@@ -1,0 +1,90 @@
+ 
+.review_head {
+  padding: 30px;
+}
+.review_head .title {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.review_head .title > span {
+  color: var(--span-color);
+  letter-spacing: 5px;
+  font-weight: 400;
+}
+.review {
+ height: 100%;
+ overflow: hidden;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.swiper-slide {
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 20px;
+  background: transparent!important;
+}
+
+/* .reviewCards{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+    place-items: center;
+    background: transparent!important;
+  
+  } */
+.reviewCard {
+  height: 100%;
+  width: 370px;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 20px 30px;
+  box-shadow: 0 1px 5px 0px rgba(71, 78, 83, 0.219);
+}
+.reviewCard:hover {
+  transition: all 0.3s linear;
+  box-shadow: 0 1px 8px 0px rgba(71, 78, 83, 0.349);
+}
+.cardHeader,
+.cardFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.headerContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.cardHeader .headerContent .name{
+  font-size: 18px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.cardHeader .headerContent .company{
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--span-color);
+}
+.cardHeader > img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+
+.reviewCard .para {
+  text-align: justify;
+  font-size: 16px;
+  padding: 10px 0;
+}
