@@ -6,6 +6,7 @@ import './review.css'
 const Review = ({rev,i}) => {
 console.log(rev);
  const {name,img, date,position,review}=rev;
+ const reviewShort=review.slice(0,100);
   return (
     < >
       <div className="reviewCard">
@@ -20,7 +21,7 @@ console.log(rev);
           
         </div>
         <p className="para">
-            {review}
+            { reviewShort}
           </p>
         <div className="cardFooter">
           <div className="rating">

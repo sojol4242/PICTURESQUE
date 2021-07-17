@@ -118,6 +118,16 @@ const Sidebar = ({ setTitle }) => {
                   <FontAwesomeIcon icon={faList} className="icon" /> Booked List
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  onClick={() => setTitle("Review")}
+                  activeClassName="activePage"
+                  to="/dashboard/review"
+                >
+                  <FontAwesomeIcon icon={faCommentAlt} className="icon" />{" "}
+                  Review
+                </NavLink>
+              </li>
             </>
           )}
         </ul>

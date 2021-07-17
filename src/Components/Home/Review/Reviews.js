@@ -64,7 +64,7 @@ const Reviews = () => {
                 slideShadows: true,
               }}
             
-              className="container"
+              className="container mySwiper"
             >
               
               {reviews.map((rev,i) => (
