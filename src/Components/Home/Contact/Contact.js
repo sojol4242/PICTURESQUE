@@ -59,7 +59,7 @@ const Contact = () => {
           </Fade>
           <Fade duration={2500} right>
             <div className="col-md-6 contactRight">
-              <form onSubmit={handleSubmit} className="contactForm" action="mailto:bsmrstueee90@gmail.com?cc=moniruzzaman.upwork@gmail.com" method="post" enctype="text/plain">
+              <form onSubmit={handleSubmit} className="contactForm" >
                 <h4 className="title">CONTACT US</h4>
                 <h5 className="subTitle">Stay Tuned</h5>
                 <Row>

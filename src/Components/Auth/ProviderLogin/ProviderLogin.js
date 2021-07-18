@@ -1,18 +1,14 @@
 import React, { useContext, useState } from "react";
-import firebase from "firebase/app";
+ 
 import "firebase/auth";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faGithub,
-  faGoogle,
-} from "@fortawesome/free-brands-svg-icons";
+ 
 import { loginWithProvider } from "../LoginManager";
 import toast from "react-hot-toast";
 import { useHistory, useLocation } from "react-router-dom";
 import { UserContext } from "../../../App";
 import "../auth.css";
 import { googleProvider } from "../Firebase";
+import ReactTypingEffect from "react-typing-effect";
 
 const ProviderLogin = () => {
   const history = useHistory();
@@ -22,7 +18,7 @@ const ProviderLogin = () => {
   // const fbProvider = new firebase.auth.FacebookAuthProvider();
   // const ghProvider = new firebase.auth.GithubAuthProvider();
   const { setUser } = useContext(UserContext);
-  const [isSignUp, setSignUp] = useState(false);
+  // const [isSignUp, setSignUp] = useState(false);
   const handleResponse = (res) => {
     setUser(res);
     if (!res.error) {
@@ -43,20 +39,27 @@ const ProviderLogin = () => {
   };
   return (
     <>
-      <h1 className="text-center text-uppercase p-1">Login with social account</h1>
-      <div className="container-fluid auth">
-        <div
-          onClick={() => handleSignIn(googleProvider)}
-          className="social-icon"
-        >
-          <FontAwesomeIcon icon={faGoogle} />
+      <div className="container-fluid">
+        <div className="row auth">
+          <div className="col-md-4 col-lg-4 col-sm-12 mx-auto auth-left">
+            <p className="hero-title-span">
+              <ReactTypingEffect text={["Welcome To", "Picturesque"]} />
+            </p>
+
+            <h2>Sign In with your google account</h2>
+            <div
+              onClick={() => handleSignIn(googleProvider)}
+              className="social-icon"
+            >
+              <img
+                src="https://img.icons8.com/color/100/000000/google-logo.png"
+                alt="Google"
+              />
+              <span className="icon-text">Google login</span>
+            </div>
+          </div>
+          <div className="col-md-6 col-lg-6 col-sm-12 mx-auto auth-right"></div>
         </div>
-        {/* <div onClick={() => handleSignIn(fbProvider)} className="social-icon">
-          <FontAwesomeIcon icon={faFacebook} />
-        </div>
-        <div onClick={() => handleSignIn(ghProvider)} className="social-icon">
-          <FontAwesomeIcon icon={faGithub} />
-        </div> */}
       </div>
     </>
   );

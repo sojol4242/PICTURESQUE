@@ -1,10 +1,9 @@
 .about {
   height: 100vh;
-padding-top: 200px;
- 
+  padding-top: 200px;
+
   /* width: 100%; */
   overflow: hidden;
-
 }
 .about_btn {
   background: transparent;
@@ -25,7 +24,7 @@ padding-top: 200px;
   font-family: sans-serif !important;
   line-height: 1.7;
   text-transform: uppercase;
-  color:var(--primary-color);
+  color: var(--primary-color);
 }
 .about_sub_title {
   color: var(--span-color);
@@ -37,20 +36,18 @@ padding-top: 200px;
   text-align: left;
 }
 
-.about_sub_title> span{
+.about_sub_title > span {
   color: var(--primary-color);
 }
 .about_words {
   text-align: justify;
   font-size: 18px;
   line-height: 1.5;
- 
+
   font-weight: 400;
   text-align: justify;
   margin: 0.5rem 0 1rem;
   line-height: 1.8;
- 
- 
 }
 @media (max-width: 780px) {
   .about_section {

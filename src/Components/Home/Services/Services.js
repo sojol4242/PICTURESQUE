@@ -32,38 +32,51 @@ const Services = () => {
       </div>
 
       <div className="py-5">
-        <Swiper
-          slidesPerView={"auto"}
-          breakpoints={{
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 3,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 20,
-            },
-          }}
-          autoplay={{
-            delay:5000,
-            disableOnInteraction: false,
-          }}
-          spaceBetween={10}
-          className="container"
-        >
-          {
-            //
-            newServices.map((service) => (
-              <SwiperSlide>
-                <Service service={service} key={service._id} />
-              </SwiperSlide>
-            ))
-          }
-        </Swiper>
+        {
+          newServices.length >0?(
+            <Swiper
+            slidesPerView={"auto"}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 3,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+            }}
+            autoplay={{
+              delay:5000,
+              disableOnInteraction: false,
+            }}
+            spaceBetween={10}
+            className="container"
+          >
+            {
+              //
+              newServices.map((service) => (
+                <SwiperSlide>
+                  <Service service={service} key={service._id} />
+                </SwiperSlide>
+              ))
+            }
+          </Swiper>
+          ):(
+            <div className="container d-flex justify-content-center align-items-center">
+            <img
+              src="https://i.ibb.co/GJVBCfr/9313-loader.gif"
+              alt="loader"
+              style={{ height: "200px", background: "w" }}
+            />
+          </div>
+          )
+        }
+       
       </div>
     </section>
   );

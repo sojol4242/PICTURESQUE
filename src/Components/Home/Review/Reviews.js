@@ -78,7 +78,7 @@ const Reviews = () => {
       ) : (
         <div className="container d-flex justify-content-center align-items-center">
           <img
-            src="https://i.ibb.co/wYTXbJs/Ripple-1-7s-307px.gif"
+            src="https://i.ibb.co/GJVBCfr/9313-loader.gif"
             alt="loader"
             style={{ height: "200px", background: "w" }}
           />

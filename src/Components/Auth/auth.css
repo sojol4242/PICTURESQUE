@@ -1,29 +1,72 @@
 .auth{
     height:100vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.social-icon {
-    height: 46px;
-    width: 46px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0.45rem;
-    color: #333;
-    border-radius: 50%;
-    border: 1px solid #333;
+    
+}
+
+.auth-right{
+  background: url(https://i.ibb.co/v4bC0Pq/8093-google-sign-in.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height: 80%;
+ 
+}
+.auth-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  
+}
+.auth-left h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 5;
+}
+.social-icon {
+    width: 70%;
+    color: var(--primary-color);
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
     background: #fff;
     outline: none;
     font-size: 1.1rem;
     transition: 0.3s;
     cursor: pointer;
+    padding: 12px;
+    text-align: center;
+    display: flex;
+ 
+    justify-content: center;
+    align-items: center;
+     
   }
-  
+  .social-icon>img{
+    height: 24px;
+    width: 24px;
+  }
   .social-icon:hover {
     border: 1px solid var(--primary-color);
     color: var(--span-color);
   }
-  
+  .social-icon .icon-text{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px;
+
+  }
+  /* @media (min-width:768px){
+    .auth{
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      
+  }
+  } */
