@@ -1,5 +1,6 @@
 import React from "react";
 import "./contact.css";
+import emailjs from 'emailjs-com';
 import { motion } from "framer-motion";
 import swal from "sweetalert";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,14 +10,40 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
-    event.target.reset();
-    swal(
-      "Thank You!",
-      "Please stay tuned! As soon as possible we will contact with you",
-      "success"
-    );
-  };
+    emailjs.sendForm('service_mxqr7j2', 'template_71ygzkj', event.target, 'user_VrMmDD9h6AwhVBhk2MFYr')
+      .then((result) => {
+          if(result){
+            console.log(result.text);
+            swal(
+              "Thank You!",
+              "Please stay tuned! As soon as possible we will contact with you",
+              "success"
+            );
+          }
+      }, (error) => {
+          if(error){
+            swal(
+              "Something is wrong",
+              "Please try again",
+              "danger"
+            );
+            console.log(error.text);
 
+          }
+      });
+    event.target.reset();
+   
+  };
+  // function sendEmail(e) {
+  //   e.preventDefault();
+
+  //   emailjs.sendForm('service_mxqr7j2', 'template_71ygzkj', e.target, 'user_VrMmDD9h6AwhVBhk2MFYr')
+  //     .then((result) => {
+  //         console.log(result.text);
+  //     }, (error) => {
+  //         console.log(error.text);
+  //     });
+  //   }
   return (
     <section id="contact">
       <div className="container contact">
@@ -32,44 +59,46 @@ const Contact = () => {
           </Fade>
           <Fade duration={2500} right>
             <div className="col-md-6 contactRight">
-              <form onSubmit={handleSubmit} className="contactForm">
+              <form onSubmit={handleSubmit} className="contactForm" action="mailto:bsmrstueee90@gmail.com?cc=moniruzzaman.upwork@gmail.com" method="post" enctype="text/plain">
                 <h4 className="title">CONTACT US</h4>
                 <h5 className="subTitle">Stay Tuned</h5>
                 <Row>
                   <Col md={12} lg={6}>
-                    <input placeholder="Your Name" type="name" required />
+                    <input placeholder="Your Name" type="name" name="name" required />
                   </Col>
                   <Col md={12} lg={6}>
-                    <input placeholder="Your Email" type="email" required />
+                    <input placeholder="Your Email" type="email" name="email" required />
                   </Col>
                   <Col md={12}>
-                    <input placeholder="Subject" type="text" required />
+                    <input placeholder="Subject" type="text" name="subject" required />
                   </Col>
                   <Col md={12}>
                     <textarea
                       placeholder="Your Message Here..."
+                      name="message"
                       required
                     ></textarea>
                   </Col>
                 </Row>
                 <div className="d-flex justify-content-center align-items-center">
-                  <motion.button
-                    whileHover={{
-                      scale: 1.01,
-                      textShadow: "0px 0px 8px rgb(255,255,255)",
-                      boxShadow: "0px 0px 8px rgb(255,255,255)",
-                    }}
-                    className="hero-btn"
-                    type="submit"
-                  >
+                  {/* <a
+                    href="mailto:bsmrstueee90@gmail.com?cc=moniruzzaman.upwork@gmail.com"
+                    rel="noopener noreferrer"
                   
-                    Send{" "}
-                    {" "}
-                    <FontAwesomeIcon
-                      icon={faPaperPlane}
-                      className="plane"
-                    />{" "}
-                  </motion.button>
+                  > */}
+                    <motion.button
+                      whileHover={{
+                        scale: 1.01,
+                        textShadow: "0px 0px 8px rgb(255,255,255)",
+                        boxShadow: "0px 0px 8px rgb(255,255,255)",
+                      }}
+                      type="submit"
+                      className="hero-btn"
+                    >
+                      Send{" "}
+                      <FontAwesomeIcon icon={faPaperPlane} className="plane" />{" "}
+                    </motion.button>
+                  {/* </a> */}
                 </div>
               </form>
             </div>
