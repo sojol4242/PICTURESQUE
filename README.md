@@ -80,7 +80,7 @@ live site : https://photography-2021.web.app/ -->
 
 <strong>project live site - </strong> <a href="https://photography-2021.web.app/">Live</a> <br/>
 <strong>BackEnd repo - </strong> <a href="https://github.com/Porgramming-Hero-web-course/complete-website-server-sojol4242">Backend</a>
-```
+
 <h3>project-screenshot</h3>
 <!-- 
 https://i.ibb.co/vqVSJL1/Screenshot-178.png
@@ -89,6 +89,7 @@ https://i.ibb.co/vqVSJL1/Screenshot-178.png
 <img src="https://i.ibb.co/J3Rwy72/Screenshot-179.png" alt="project-screenshot-home"/>
 <h5>Admin-form : Admin can add a new service for the company</h5>
 <img src="https://i.ibb.co/x1zM7z9/Screenshot-177.png" alt="project-screenshot-admin"/>
-```
 
-<h6>And many more....</h6>
+```
+# And many more.... 
+```
