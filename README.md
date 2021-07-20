@@ -19,8 +19,9 @@ You will also see any lint errors in the console.
 <h4>Project name :  <small>Picturesque</small></h4>
 
 
-<h4>Technology Used : (FrontEND) </h4>
-
+```
+<h4>Technology Used : (Frontend) </h4>
+```
 <ul>
 <li>React.js</li>
 
@@ -34,8 +35,9 @@ You will also see any lint errors in the console.
 <li>CSS</li>
 
 </ul>
+```
 <h4>Technology Used : (BackEND) </h4>
-
+```
 <ul>
 <li>Mongodb for database</li>
 
@@ -46,7 +48,7 @@ You will also see any lint errors in the console.
 
 
 </ul>
-
+```
 <h5>Motive : </h5>
 <ul>
 <li>Practice MERN Fundamental</li>
@@ -68,14 +70,14 @@ You will also see any lint errors in the console.
 
 
 </ul>
-
+```
 <!-- Client Side repo : https://github.com/Porgramming-Hero-web-course/complete-website-client-sojol4242
 Server Side repo : https://github.com/Porgramming-Hero-web-course/complete-website-server-sojol4242
 live site : https://photography-2021.web.app/ -->
 
 <strong>project live site - </strong> <a href="https://photography-2021.web.app/">Live</a> <br/>
 <strong>BackEnd repo - </strong> <a href="https://github.com/Porgramming-Hero-web-course/complete-website-server-sojol4242">Backend</a>
-
+```
 <h3>project-screenshot</h3>
 <!-- 
 https://i.ibb.co/vqVSJL1/Screenshot-178.png
@@ -84,6 +86,6 @@ https://i.ibb.co/vqVSJL1/Screenshot-178.png
 <img src="https://i.ibb.co/J3Rwy72/Screenshot-179.png" alt="project-screenshot-home"/>
 <h5>Admin-form : Admin can add a new service for the company</h5>
 <img src="https://i.ibb.co/x1zM7z9/Screenshot-177.png" alt="project-screenshot-admin"/>
-
+```
 
 <h6>And many more....</h6>
