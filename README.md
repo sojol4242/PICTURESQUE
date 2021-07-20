@@ -20,7 +20,7 @@ You will also see any lint errors in the console.
 
 
 ```
-<h4>Technology Used : (Frontend) </h4>
+ # Technology Used : (Frontend) 
 ```
 <ul>
 <li>React.js</li>
@@ -36,7 +36,7 @@ You will also see any lint errors in the console.
 
 </ul>
 ```
-<h4>Technology Used : (BackEND) </h4>
+# Technology Used : (Backend) 
 ```
 <ul>
 <li>Mongodb for database</li>
@@ -48,8 +48,10 @@ You will also see any lint errors in the console.
 
 
 </ul>
-```
+
 <h5>Motive : </h5>
+
+```
 <ul>
 <li>Practice MERN Fundamental</li>
 
