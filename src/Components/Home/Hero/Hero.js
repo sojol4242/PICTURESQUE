@@ -8,13 +8,13 @@ import carousalData from "../../../StaticData/CarousalData";
 import "./hero.css";
  
 const Hero = () => {
- //style={{backgroundImage:`url("${carousal.img}")`}}
+  const key = Math.floor(Math.random()) * 100;
   return (
     <>
       <section className="container-fluid hero-bg">
         <Carousel className="w-100 m-auto">
-         {carousalData.map((carousal,i)=>(
-            <Carousel.Item key={i} >
+         {carousalData.map((carousal)=>(
+            <Carousel.Item key={key} >
             <Zoom duration={1000}>
               <div className="row hero">
                 <div className="col-md-12  col-sm-12 hero-content">

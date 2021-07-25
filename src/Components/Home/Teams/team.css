@@ -74,6 +74,7 @@
 .cardContent {
     text-align: center;
     border-bottom: 1px solid rgba(119, 119, 119, 0.322);
+    padding: 10px 0;
    
 }
 .cardContent>img{
@@ -86,6 +87,7 @@
     color: rgb(0, 0, 0);
     letter-spacing: 3px;
     text-transform: uppercase;
+    font-size: 1rem;
    
 }
 .cardContent .position{

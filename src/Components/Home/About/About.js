@@ -12,8 +12,8 @@ const About = () => {
     <section className="container-fluid about_Section" id="about">
       <div className="row about">
         <Fade duration={2500} left distance='140px'>
-        <div className="col-md-6 about-banner mx-auto">
-          <Carousel className="h-75 w-75 m-auto">
+        <div className="col-md-6 col-sm-12 about-banner mx-auto">
+          <Carousel className="h-75 w-100 m-auto">
             {carousalData.map((carousal, i) => (
               <Carousel.Item key={i}>
                
@@ -21,6 +21,8 @@ const About = () => {
                     src={carousal.img}
                     className="img-fluid"
                     alt="about_Image"
+                    style={{ height:"350px",width:"100%"} }
+                  
                   />
            
               </Carousel.Item>
@@ -29,7 +31,7 @@ const About = () => {
           </div>
         </Fade>
 
-        <div className="col-md-6">
+        <div className="col-md-6 col-sm-12">
           <Fade duration={2500} right distance='140px'>
             <h2 className="about_title">Who we Are?</h2>
           </Fade>

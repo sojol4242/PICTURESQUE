@@ -8,7 +8,7 @@ import ReactTypingEffect from "react-typing-effect";
 
 
 const CarousalItem = ({carousal}) => {
-    console.log(carousal);
+    
     const {img}=carousal.img;
 
     return (

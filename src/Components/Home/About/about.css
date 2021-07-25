@@ -1,5 +1,5 @@
 .about {
-  height: 100vh;
+ 
   padding-top: 200px;
 
   /* width: 100%; */
@@ -50,7 +50,13 @@
   line-height: 1.8;
 }
 @media (max-width: 780px) {
-  .about_section {
-    margin: 150px 0;
+  
+  .about{
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+  .about-banner{
+    margin: 50px 0;
   }
 }

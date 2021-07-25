@@ -8,13 +8,15 @@ import Header from "../Common/Header/Header";
 import Footer from "../Common/Footer/Footer";
 import Contact from "./Contact/Contact";
 import ScrollTop from "../Common/ScrollTop";
+import WorksGallery from "./Works/WorksGallery";
+// import Works from "./Works/Works";
 
 const Home = () => {
   return (
     <>
       <Header />
       <div className="container-fluid">
-      <ScrollTop />
+        <ScrollTop />
         <Hero />
         <About />
         <Services />
@@ -22,18 +24,16 @@ const Home = () => {
 
         {/* teams */}
         <Teams />
+         {/* Works */}
+        <WorksGallery />
 
-        {/*  Works*/}
         {/* clients */}
-       
+
         {/* get in touch */}
         <Contact />
         {/* footer */}
-
-   
-
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

@@ -94,6 +94,14 @@ const Header = () => {
           </Nav.Item>
           <Nav.Item>
             <Nav.Link
+              href="#works"
+              className={isSticky ? "nav-link-change" : "nav-link"}
+            >
+              Recent Works
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link
               href="#contact"
               className={isSticky ? "nav-link-change" : "nav-link"}
             >

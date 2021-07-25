@@ -1,10 +1,9 @@
 import React from 'react';
-import {Col, Nav, Row, Tab } from 'react-bootstrap';
+import { Nav,   Tab } from 'react-bootstrap';
 import teamData from '../../../StaticData/TeamData';
 import Team from './Team'
 const Teams = () => {
-
-    console.log(teamData);
+ 
     return (
         <section id="teams" className="container-fluid teams">
         <div className="row my-2">

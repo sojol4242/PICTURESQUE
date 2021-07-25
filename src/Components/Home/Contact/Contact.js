@@ -10,7 +10,7 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
-    emailjs.sendForm('service_mxqr7j2', 'template_71ygzkj', event.target, 'user_VrMmDD9h6AwhVBhk2MFYr')
+    emailjs.sendForm('service_w90u6hu', 'template_ctskxer', event.target, 'user_t2Fl49b37joD2nKwlD0CH')
       .then((result) => {
           if(result){
             console.log(result.text);
