@@ -5,8 +5,8 @@ import "swiper/components/pagination/pagination.min.css";
 import SwiperCore, { Autoplay, Pagination } from "swiper/core";
 import "./review.css";
 import Review from "./Review";
- 
-SwiperCore.use([  Pagination, Autoplay]);
+
+SwiperCore.use([Pagination, Autoplay]);
 const Reviews = () => {
   const [reviews, setReviews] = useState([]);
 
@@ -20,24 +20,28 @@ const Reviews = () => {
 
   return (
     <section id="reviews" className="container-fluid">
-       <div className="row">
-            <div className="review_head col-md-12 text-center mx-auto">
-              <h2 className="title">
-                {" "}
-                <span>What clients</span> say about us
-              </h2>
-            </div>
-          </div>
+      <div className="row">
+        <div className="review_head col-md-12 text-center mx-auto">
+          <h2 className="title">
+            {" "}
+            <span>What clients</span> say about us
+          </h2>
+        </div>
+      </div>
       {reviews.length > 0 ? (
         <>
-         
           <div className="review py-5">
             <Swiper
-              autoplay={{
-                delay: 5000,
-                disableOnInteraction: false,
+              coverflowEffect={{
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1.1,
               }}
-              slidesPerView={"auto"}
+              pagination={true}
+              loop={true}
+        
+              slidesPerView={3}
               breakpoints={{
                 320: {
                   slidesPerView: 1,
@@ -52,25 +56,20 @@ const Reviews = () => {
                   spaceBetween: 20,
                 },
               }}
-           
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              spaceBetween={10}
               effect={"coverflow"}
               grabCursor={true}
               centeredSlides={true}
-              coverflowEffect={{
-                rotate: 50,
-                stretch:1,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
-              }}
-            
               className="container mySwiper"
             >
-              
-              {reviews.map((rev,i) => (
+              {reviews.map((rev, i) => (
                 <SwiperSlide>
-                <Review rev={rev} i={i}/>
-              </SwiperSlide>
+                  <Review rev={rev} i={i} />
+                </SwiperSlide>
               ))}
             </Swiper>
           </div>
@@ -80,7 +79,7 @@ const Reviews = () => {
           <img
             src="https://i.ibb.co/GJVBCfr/9313-loader.gif"
             alt="loader"
-            style={{ height: "200px", background: "w" }}
+            style={{ height: "200px", background: "transparent" }}
           />
         </div>
       )}

@@ -1,0 +1,13 @@
+.faqCard{
+    background: var(--span-color);
+    color: #fff;
+}
+.faqHeader{
+    border: none;
+    
+}
+.faqDesc{
+  background: #fff;
+  color: var(--span-color);  
+  border-top:1px solid #fff;
+}

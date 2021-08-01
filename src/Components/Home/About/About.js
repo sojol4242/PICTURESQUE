@@ -31,7 +31,7 @@ const About = () => {
           </div>
         </Fade>
 
-        <div className="col-md-6 col-sm-12">
+        <div className="col-md-6 col-sm-12 about_content">
           <Fade duration={2500} right distance='140px'>
             <h2 className="about_title">Who we Are?</h2>
           </Fade>

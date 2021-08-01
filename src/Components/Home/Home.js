@@ -9,27 +9,34 @@ import Footer from "../Common/Footer/Footer";
 import Contact from "./Contact/Contact";
 import ScrollTop from "../Common/ScrollTop";
 import WorksGallery from "./Works/WorksGallery";
+import FreeQuestion from "./FreQuestion/FreeQuestion";
+import NavBar from "../Common/Header/NavBar";
+
 // import Works from "./Works/Works";
 
 const Home = () => {
   return (
     <>
-      <Header />
+      {/* <Header />
+       */}
+      <NavBar/>
       <div className="container-fluid">
         <ScrollTop />
         <Hero />
         <About />
         <Services />
-        <Review />
+     
 
         {/* teams */}
         <Teams />
-         {/* Works */}
+        {/* Works */}
         <WorksGallery />
 
         {/* clients */}
 
+        <FreeQuestion />
         {/* get in touch */}
+        <Review />
         <Contact />
         {/* footer */}
       </div>

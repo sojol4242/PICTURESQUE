@@ -11,7 +11,7 @@ const Hero = () => {
   const key = Math.floor(Math.random()) * 100;
   return (
     <>
-      <section className="container-fluid hero-bg">
+      <section className="container-fluid">
         <Carousel className="w-100 m-auto">
          {carousalData.map((carousal)=>(
             <Carousel.Item key={key} >
@@ -48,6 +48,7 @@ const Hero = () => {
                     </a>
                   </Zoom>
                 </div>
+              
               </div>
             </Zoom>
           </Carousel.Item> 

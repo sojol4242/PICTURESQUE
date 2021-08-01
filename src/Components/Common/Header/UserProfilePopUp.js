@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext , useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -27,8 +27,6 @@ const UserProfilePopUp = () => {
     });
   };
 
-
-
   function DropdownItem(props) {
     return (
       <a href="#home" className="menu-item">
@@ -41,25 +39,25 @@ const UserProfilePopUp = () => {
   return (
     <div className="dropdown" style={{ display: isClose && "none" }}>
       <div className="menu">
-        <Link to="/home">
+        <Link to="/" style={{ textDecoration: "none" }}>
           {" "}
           <DropdownItem leftIcon={<FontAwesomeIcon icon={faHome} />}>
             Home
           </DropdownItem>
         </Link>
-        <Link to="/dashboard/profile">
+        <Link to="/dashboard/profile" style={{ textDecoration: "none" }}>
           {" "}
           <DropdownItem leftIcon={<FontAwesomeIcon icon={faUser} />}>
             Profile
           </DropdownItem>
         </Link>
-        <Link to="/dashboard/profile">
+        <Link to="/dashboard/profile" style={{ textDecoration: "none" }}>
           {" "}
           <DropdownItem leftIcon={<FontAwesomeIcon icon={faBorderNone} />}>
             Dashboard
           </DropdownItem>
         </Link>
-        <Link onClick={signOut} >
+        <Link onClick={signOut} style={{ textDecoration: "none" }}>
           {" "}
           <DropdownItem
             leftIcon={<FontAwesomeIcon icon={faArrowAltCircleRight} />}
