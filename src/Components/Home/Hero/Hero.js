@@ -8,7 +8,7 @@ import carousalData from "../../../StaticData/CarousalData";
 import "./hero.css";
  
 const Hero = () => {
-  const key = Math.floor(Math.random()) * 100;
+  const key = Math.floor(Math.random()) * 10000;
   return (
     <>
       <section className="container-fluid">

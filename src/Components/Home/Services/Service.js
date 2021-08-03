@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Service = ({ service }) => {
   const { _id,serviceName, img, description, price } = service;
-// const des=description.split(0,2);
+ 
   return (
     <div className="service">
       <div className="serviceImg">

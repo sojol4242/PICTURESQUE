@@ -4,7 +4,7 @@ import React from "react";
 import './review.css'
 
 const Review = ({rev,i}) => {
-console.log(rev);
+ 
  const {name,img, date,position,review}=rev;
  const reviewShort=review.slice(0,100);
   return (

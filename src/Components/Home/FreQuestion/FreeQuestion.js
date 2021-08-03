@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 import "./faq.css";
 import { Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+ 
 import { faArrowAltCircleDown } from "@fortawesome/free-regular-svg-icons";
 const FreeQuestion = () => {
   const faqData = [

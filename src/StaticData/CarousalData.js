@@ -1,16 +1,6 @@
-
-//   https://i.ibb.co/BZtdRbr/undraw-Camera-re-cnp4.png
-// https://i.ibb.co/GcT8XWL/undraw-drone-surveillance-kjjg.png
-// https://i.ibb.co/9wZwpVw/undraw-fashion-photoshoot-mtq8.png
-// https://i.ibb.co/thw5b0y/undraw-love-xfcv.png
-// https://i.ibb.co/8Xnnp5C/undraw-moments-0y20.png
-// https://i.ibb.co/PZQvCZg/undraw-photo-session-clqr.png
-// https://i.ibb.co/YBNWTLP/undraw-product-photography-91i2.png
-// https://i.ibb.co/KrHnZQY/undraw-Surveillance-re-8tkl.png
-// https://i.ibb.co/MNXMdqn/undraw-videographer-nnc7-1.png
-// https://i.ibb.co/SwgdfPB/undraw-videographer-nnc7.png
+ 
    const carousalData=[
-     {
+     {   
          img:" https://i.ibb.co/9wZwpVw/undraw-fashion-photoshoot-mtq8.png",
          title:"Fashion photography is a genre of photography which is devoted to displaying clothing and other fashion items",
          para:"Start by looking at the picture or imagining it in your head. Then, start describing the picture in the greatest detail that you can. Think about how that picture might inspire a story and jot down your thoughts; later on you can turn those notes into a full story."

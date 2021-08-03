@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
- 
+
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 import { motion } from "framer-motion";
@@ -8,40 +8,40 @@ import Carousel from "react-bootstrap/Carousel";
 import carousalData from "../../../StaticData/CarousalData";
 
 const About = () => {
+
+  const key = Math.floor(Math.random()) * 100000;
+
   return (
     <section className="container-fluid about_Section" id="about">
       <div className="row about">
-        <Fade duration={2500} left distance='140px'>
-        <div className="col-md-6 col-sm-12 about-banner mx-auto">
-          <Carousel className="h-75 w-100 m-auto">
-            {carousalData.map((carousal, i) => (
-              <Carousel.Item key={i}>
-               
+        <Fade duration={2500} left distance="140px">
+          <div className="col-md-6 col-sm-12 about-banner mx-auto">
+            <Carousel className="h-75 w-100 m-auto">
+              {carousalData.map((carousal) => (
+                <Carousel.Item key={key}>
                   <img
                     src={carousal.img}
                     className="img-fluid"
                     alt="about_Image"
-                    style={{ height:"350px",width:"100%"} }
-                  
+                    style={{ height: "350px", width: "100%" }}
                   />
-           
-              </Carousel.Item>
-            ))}
-          </Carousel>
+                </Carousel.Item>
+              ))}
+            </Carousel>
           </div>
         </Fade>
 
         <div className="col-md-6 col-sm-12 about_content">
-          <Fade duration={2500} right distance='140px'>
+          <Fade duration={2500} right distance="140px">
             <h2 className="about_title">Who we Are?</h2>
           </Fade>
-          <Fade duration={3000} right distance='140px'>
+          <Fade duration={3000} right distance="140px">
             {" "}
-            <h5 className="about_sub_title" distance='140px'>
+            <h5 className="about_sub_title" distance="140px">
               HOW WE CAN CAPTURE <span>YOUR ARTISTIC</span> MOMENTS
             </h5>{" "}
           </Fade>
-          <Fade duration={3500} bottom distance='140px'>
+          <Fade duration={3500} bottom distance="140px">
             <p className="about_words">
               Start by looking at the picture or imagining it in your head.
               Then, start describing the picture in the greatest detail that you
@@ -50,7 +50,7 @@ const About = () => {
               story.
             </p>
           </Fade>
-          <Zoom left distance='140px'>
+          <Zoom left distance="140px">
             <a href="#contact">
               <motion.button
                 whileHover={{

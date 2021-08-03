@@ -16,7 +16,7 @@ const Services = () => {
       .then((res) => res.json())
       .then((data) => {
         setNewServices(data);
-        console.log(data);
+ 
       });
   }, []);
 
@@ -59,9 +59,9 @@ const Services = () => {
           >
             {
               //
-              newServices.map((service) => (
+              newServices.map((service,i) => (
                 <SwiperSlide>
-                  <Service service={service} key={service._id} />
+                  <Service service={service} key={i} />
                 </SwiperSlide>
               ))
             }
@@ -71,7 +71,7 @@ const Services = () => {
             <img
               src="https://i.ibb.co/GJVBCfr/9313-loader.gif"
               alt="loader"
-              style={{ height: "200px", background: "w" }}
+              style={{ height: "200px", background: "transparent" }}
             />
           </div>
           )
