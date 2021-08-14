@@ -82,7 +82,9 @@ const CheckOutForm = () => {
   return (
     <>
       {/* <Header/> */}
-      <section className="container-fluid checkOut">
+      <section className="container-fluid checkOut"
+      style={{borderBottom:"1px solid white"}}
+      >
         {selectedService ? (
           <div className="row mx-2">
             <div className="col-md-6 serviceDetails mx-auto p-5">

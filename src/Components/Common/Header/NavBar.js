@@ -1,11 +1,9 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+ 
 import { motion } from "framer-motion";
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from "../../../App";
-import nav_Icon from "../../../images/undraw_photo_session_clqr.svg";
+import nav_Icon from "../../../images/undraw_product_photography_91i2.svg";
 import "./navBar.css";
 import UserProfilePopUp from "./UserProfilePopUp";
 
