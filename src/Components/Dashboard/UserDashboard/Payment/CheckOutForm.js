@@ -83,7 +83,7 @@ const CheckOutForm = () => {
     <>
       {/* <Header/> */}
       <section className="container-fluid checkOut"
-      style={{borderBottom:"1px solid white"}}
+      style={{borderBottom:"1px solid #fff"}}
       >
         {selectedService ? (
           <div className="row mx-2">
