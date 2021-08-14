@@ -102,9 +102,15 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12 middle  d-flex flex-column justify-content-center align-items-center">
+        <div class="col-md-4 col-sm-12 middle d-flex flex-column justify-content-center align-items-center my-5"
+     
+        >
           <div className="usefulLinks">
-            <h6 className="text-uppercase">Useful Links</h6>
+            <h6 className="text-uppercase"
+                style={{
+               borderBottom:"2px solid #fff"
+                }}
+            >Useful Links</h6>
             <div className="usefulLink d-flex flex-column justify-content-start align-items-start">
               <a
                 href="#"
