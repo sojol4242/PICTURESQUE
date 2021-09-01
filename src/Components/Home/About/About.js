@@ -16,14 +16,14 @@ const About = () => {
       <div className="row about">
         <Fade duration={2500} left distance="140px">
           <div className="col-md-6 col-sm-12 about-banner mx-auto">
-            <Carousel className="h-75 w-100 m-auto">
+            <Carousel className="h-100 w-75 m-auto">
               {carousalData.map((carousal) => (
                 <Carousel.Item key={key}>
                   <img
                     src={carousal.img}
                     className="img-fluid"
                     alt="about_Image"
-                    style={{ height: "350px", width: "100%" }}
+                    style={{ height: "100%", width: "100%" }}
                   />
                 </Carousel.Item>
               ))}

@@ -31,7 +31,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="py-5">
+      <>
         {
           newServices.length >0?(
             <Swiper
@@ -77,7 +77,7 @@ const Services = () => {
           )
         }
        
-      </div>
+      </>
     </section>
   );
 };

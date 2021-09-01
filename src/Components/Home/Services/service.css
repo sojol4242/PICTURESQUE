@@ -1,24 +1,22 @@
-#services{
-  padding-top:100px;
+#services {
+  padding-top: 100px;
   margin-bottom: 5rem;
 }
 .services_head {
-    padding: 30px;
+  padding: 30px;
+}
+.services_head .title {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.services_head .title > span {
+  color: var(--span-color);
+  letter-spacing: 5px;
+  font-weight: 400;
+}
 
-}
-.services_head .title{
- text-transform: uppercase;
- color:var(--primary-color);
- font-weight: 700;
- letter-spacing: 2px;
-}
-.services_head .title>span{
-    color:var(--span-color);
-    letter-spacing: 5px;
-    font-weight: 400;
-}
-
- 
 .service {
   height: 450px;
   width: 400px;
@@ -42,11 +40,10 @@
 .service:hover:before {
   clip-path: circle(85% at 80% -20%);
   border-radius: 20px;
-
 }
-.service:hover{
-    transition: all 0.8s linear;
-    box-shadow: 0 1px 8px 0px rgba(71, 78, 83, 0.473);
+.service:hover {
+  transition: all 0.8s linear;
+  box-shadow: 0 1px 8px 0px rgba(71, 78, 83, 0.473);
 }
 /* .service:after {
     content: "Service";
@@ -73,7 +70,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 270px;
+  width: 200px;
   transform: translate(-50%, -50%);
 }
 .service .serviceContent {
@@ -87,21 +84,19 @@
   text-align: center;
   opacity: 0;
   visibility: hidden;
-   
 }
 .service:hover .serviceContent {
   height: 150px;
   opacity: 1;
   visibility: visible;
-  transition-delay: .5s;
+  transition-delay: 0.5s;
 }
 .service .serviceContent > h2 {
- 
   text-transform: uppercase;
   position: relative;
   font-weight: 600;
   font-size: 18px;
-  letter-spacing: 1px;
+ 
   color: var(--primary-color);
 }
 /* .service .serviceContent > p {
@@ -115,51 +110,49 @@
   padding: 5px 20px;
   transition: all 0.5s;
 }
-.service .serviceContent .servicePrice  h3 {
-    padding-right: 5px;
-    font-weight: 400;
-    font-size:16px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+.service .serviceContent .servicePrice h3 {
+  padding-right: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
-.service .serviceContent .servicePrice  .price{
-    font-weight: 700;
-    font-size:14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.service .serviceContent .servicePrice .price {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
-.service .serviceContent .addBtn{
-    display: inline-block;
-    padding: 10px 20px;
-    background: var(--span-color);
-    opacity: 0;
-    font-weight: 700;
-    border-radius:10px;
-    transform: translateY(50px);
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    transition: 1s;
-    border: 1px solid #fff;
-
+.service .serviceContent .addBtn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--span-color);
+  opacity: 0;
+  font-weight: 700;
+  border-radius: 10px;
+  transform: translateY(50px);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: 1s;
+  border: 1px solid #fff;
 }
-.service:hover .serviceContent .addBtn{
-    opacity: 1;
-    transform: translateY(0px);
-    transition-delay: .5s;
+.service:hover .serviceContent .addBtn {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.5s;
 }
 
 .swiper-container {
   width: 100%;
   height: 100%;
- 
   background: transparent !important;
 }
 
 .swiper-slide {
- height: 100%;
- width: 100%;
+  height: 100%;
+  width:100%;
   text-align: center;
   font-size: 18px;
   padding-bottom: 10px;
@@ -179,7 +172,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   padding: 20px;
-  background: transparent!important;
+  background: transparent !important;
   /* box-shadow: 0 1px 5px 0px rgba(71, 78, 83, 0.123); */
 }
 /* 
@@ -190,12 +183,26 @@
   object-fit: cover;
 } */
 
- 
-
 .swiper-slide:nth-child(2n) {
-  width: 100%;
+  width:100%;
 }
 
 .swiper-slide:nth-child(3n) {
-  width: 100%;
+  width:100%;
 }
+/* @media (max-width: 425px) {
+   
+  .swiper-slide{
+    width: 380px !important;
+  }
+  
+.swiper-slide:nth-child(2n) {
+  width: 380px !important;
+
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 380px !important;
+
+}
+} */
