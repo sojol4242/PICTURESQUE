@@ -86,9 +86,9 @@ live site : https://photography-2021.web.app/ -->
 https://i.ibb.co/vqVSJL1/Screenshot-178.png
  -->
 <h5>Home-page</h5>
-<img src="https://i.ibb.co/J3Rwy72/Screenshot-179.png" alt="project-screenshot-home"/>
-<h5>Admin-form : Admin can add a new service for the company</h5>
-<img src="https://i.ibb.co/x1zM7z9/Screenshot-177.png" alt="project-screenshot-admin"/>
+<img src="https://i.ibb.co/FVTkLcp/Fire-Shot-Pro-Webpage-Screenshot-006-Picturesque-Your-Photographic-Partner-picturesque.png" alt="project-screenshot-home" title="home-page"/>
+<h5>Admin-form </h5>
+<img src="https://i.ibb.co/JsJRC18/Fire-Shot-Pro-Webpage-Screenshot-010-Picturesque-Your-Photographic-Partner-picturesque.png" alt="project-screenshot-admin" title="admin-form"/>
 
 ```
 # And many more.... 
