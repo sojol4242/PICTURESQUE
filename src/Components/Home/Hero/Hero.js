@@ -18,7 +18,7 @@ const Hero = () => {
             
               <Zoom duration={1000}>
                 <div className="row hero">
-                  <div className="col-md-12  col-sm-12 hero-content pt-3">
+                  <div className="col-md-12  col-sm-12 hero-content pt-1">
                     <Fade duration={2000} right></Fade>
                     <p className="hero-title-span">
                 <ReactTypingEffect text={["Welcome To", "Picturesque"]} />
