@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import './review.css'
 
-const Review = ({rev,i}) => {
+const Review = ({rev}) => {
  
  const {name,img, date,position,review}=rev;
  const reviewShort=review.slice(0,100);

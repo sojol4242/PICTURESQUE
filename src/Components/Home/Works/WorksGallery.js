@@ -67,13 +67,13 @@ const WorksGallery = () => {
       <div className="row portfolio-items">
      
             {data.map(({ title, thumb }, index) => (
-              <div key={index} onClick={() => openImageViewer(index)} className="col-sm-6 col-md-4 col-lg-4">
+              <div key={index} onClick={() => openImageViewer(index)} className="col-sm-12 col-md-6 col-lg-4">
                 <div className="portfolio-item cursor p-3">
                   <div className="hover-bg">
                     <div className="hover-text">
-                      <h4>{title}</h4>
+                      <h4 className="px-3">{title}</h4>
                     </div>
-                    <img src={thumb} className="img-responsive" alt="Project Title" height="300" width="100%"/>{" "}
+                    <img src={thumb} alt="Project Title" height="320px" width="100%"/>{" "}
                   </div>
                 </div>
               </div>

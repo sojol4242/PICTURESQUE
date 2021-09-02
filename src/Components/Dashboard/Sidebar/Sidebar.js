@@ -17,7 +17,7 @@ const Sidebar = ({ setTitle }) => {
   return (
     <>
       <div className="sideBrand">
-        <Link to="/" className="navText">
+        <Link to="/" className="navText" style={{ textDecoration: "none",color:"#fff" }}>
           Picturesque
         </Link>
       </div>

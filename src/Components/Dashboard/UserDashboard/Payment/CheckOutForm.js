@@ -5,8 +5,9 @@ import { useParams } from "react-router";
 import "./payment.css";
 import Footer from "../../../Common/Footer/Footer";
 import Payment from "./Payment";
-import Header from "../../../Common/Header/Header";
+ 
 import { UserContext } from "../../../../App";
+ 
 const CheckOutForm = () => {
   const { user } = useContext(UserContext);
   const [selectedDate, setSelectedDate] = useState(
@@ -71,7 +72,7 @@ const CheckOutForm = () => {
 
         // console.log(serviceDetails);
       });
-  }, []);
+  }, [id]);
 
   //  handle checkout:
 
@@ -81,8 +82,8 @@ const CheckOutForm = () => {
 
   return (
     <>
-      {/* <Header/> */}
-      <section className="container-fluid checkOut"
+ 
+      <section className="container-fluid checkOut h-100 py-5"
       style={{borderBottom:"1px solid #fff"}}
       >
         {selectedService ? (
@@ -181,7 +182,9 @@ const CheckOutForm = () => {
             />
           </div>
         )}
+       
       </section>
+      {/* <p className="mt-3 text-white text-center">Back to landing page <Link to="/home">wwww.picturesque.org</Link> </p> */}
       <Footer />
     </>
   );

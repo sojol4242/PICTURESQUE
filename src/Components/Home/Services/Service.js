@@ -5,7 +5,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Service = ({ service }) => {
-  const { _id, serviceName, img, description, price } = service;
+  const { _id, serviceName, img,  price } = service;
 
   return (
     <div className="service">
@@ -14,7 +14,7 @@ const Service = ({ service }) => {
       </div>
       <div className="serviceContent">
         <h2>{serviceName}</h2>
-        {/* <p>{des}</p> */}
+       
         <div className="servicePrice">
           <h3>Price:</h3>
           <h3 className="price">{price}</h3>

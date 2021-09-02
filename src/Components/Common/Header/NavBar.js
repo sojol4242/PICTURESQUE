@@ -1,4 +1,7 @@
- 
+/* eslint-disable jsx-a11y/anchor-is-valid */
+
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
@@ -13,9 +16,7 @@ const NavBar = () => {
   const profile = user.img;
   const [open, setOpen] = useState(false);
   const [isSticky, setSticky] = useState(false);
-  // const [showLinks, setShowLinks] = useState(false);
-  // const linksContainerRef = useRef(null);
-  // const linksRef = useRef(null);
+  const [showLinks, setShowLinks] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -27,23 +28,36 @@ const NavBar = () => {
     });
   }, []);
   const scrollTop = () => window["scrollTo"]({ top: 0, behavior: "smooth" });
-  // const toggleLinks = () => {
-  //   setShowLinks(!showLinks);
-  // };
-  // useEffect(() => {
-  //   const linksHeight = linksRef.current.getBoundingClientRect().height;
-  //   console.log("Height : ",linksHeight);
-  //   if (showLinks) {
-  //     linksContainerRef.current.style.height = '0px';
-  //   } else {
 
-  //     linksContainerRef.current.style.height = `${linksHeight}px`;
-  //   }
-  // }, [showLinks]);
+  const toggleLinks = () => {
+    setShowLinks(!showLinks);
+  
+  };
+
   return (
     <>
       {/* className={isSticky?"navBarChange":"navBar"} */}
       <div className={isSticky ? "navBarChange" : "navBar"}>
+        <span className="hamburger" onClick={toggleLinks}>
+          {showLinks ? (
+            <>
+              <FontAwesomeIcon
+                icon={faTimes}
+                onClick={toggleLinks}
+                className={isSticky ? "barIconChange" : "barIcon"}
+              />
+            </>
+          ) : (
+            <>
+              {" "}
+              <FontAwesomeIcon
+                icon={faBars}
+                onClick={toggleLinks}
+                className={isSticky ? "barIconChange" : "barIcon"}
+              />
+            </>
+          )}
+        </span>
         <div className="brand" onClick={scrollTop}>
           <img
             src={nav_Icon}
@@ -55,43 +69,74 @@ const NavBar = () => {
             Picturesque
           </span>
         </div>
-        {/* <span className="hamburger" onClick={toggleLinks}>
-          <FontAwesomeIcon icon={faBars} />
-        </span> */}
-        <div className="linksContainer">
-          <nav className="navLinks">
-            <a href="#" className={isSticky ? "navLinkChange" : "navLink"}>
-              Home
-            </a>
-            <a href="#about" className={isSticky ? "navLinkChange" : "navLink"}>
-              About
-            </a>
-            <a
-              href="#services"
-              className={isSticky ? "navLinkChange" : "navLink"}
-            >
-              Services
-            </a>
-            <a href="#teams" className={isSticky ? "navLinkChange" : "navLink"}>
-              Teams
-            </a>
+        {/* || isSticky?"navLinksChange active":"navLinksChange" */}
 
-            <a href="#works" className={isSticky ? "navLinkChange" : "navLink"}>
-              Portfolio
-            </a>
-            <a
-              href="#reviews"
-              className={isSticky ? "navLinkChange" : "navLink"}
-            >
-              Testimonials
-            </a>
-          </nav>
-        </div>
+        <nav className={showLinks ? "navLinks active" : "navLinks"}>
+          <a
+            href="#"
+            className={isSticky ? "navLinkChange" : "navLink"}
+            
+       
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            className={isSticky ? "navLinkChange" : "navLink"}
+         
+          >
+            About
+          </a>
+          <a
+            href="#services"
+            className={isSticky ? "navLinkChange" : "navLink"}
+            onClick={toggleLinks}
+          
+          >
+            Services
+          </a>
+          <a
+            href="#teams"
+            className={isSticky ? "navLinkChange" : "navLink"}
+      
+          >
+            Teams
+          </a>
+
+          <a
+            href="#works"
+            className={isSticky ? "navLinkChange" : "navLink"}
+        
+ 
+          >
+            Portfolio
+          </a>
+          <a
+            href="#reviews"
+            className={isSticky ? "navLinkChange" : "navLink"}
+  
+            
+          >
+            Testimonials
+          </a>
+          <a
+            href="#contact"
+            className={isSticky ? "navLinkChange" : "navLink"}
+  
+          
+          >
+            Contact
+          </a>
+        </nav>
 
         <div className="userProfile">
           {user.email ? (
             <img
-              src={profile}
+              src={
+                profile
+                  ? profile
+                  : "https://e7.pngegg.com/pngimages/340/946/png-clipart-avatar-user-computer-icons-software-developer-avatar-child-face.png"
+              }
               alt={user.name}
               onClick={() => {
                 setOpen(!open);
@@ -113,6 +158,7 @@ const NavBar = () => {
             </Link>
           )}
         </div>
+
         {open && <UserProfilePopUp />}
       </div>
     </>

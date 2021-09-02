@@ -9,9 +9,10 @@
 .uploadBtn {
     color: #fff;
     border: 1px solid #1912367e;
-    background-color: var(--span-color);
+    background-color: var(--span-color)!important;
     padding: 8px 20px;
     border-radius: 0.5rem;
+    border: none !important;
     font-size: 1rem;
     font-weight: 500;
     outline: 0;

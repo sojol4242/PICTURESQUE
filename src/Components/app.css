@@ -42,3 +42,6 @@ body::-webkit-scrollbar-thumb:hover {
   display: none;
 }
  
+*>.swiper-pagination-bullets{
+display: none;
+}

@@ -16,40 +16,19 @@
   height: 100%;
   overflow: hidden;
 }
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding: 20px;
-  background: transparent !important;
-}
-
-/* .reviewCards{
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 2rem;
-    place-items: center;
-    background: transparent!important;
-  
-  } */
+ 
 .reviewCard {
   height: 100%;
-  width: 370px;
+  width:100%;
   border-radius: 20px;
   cursor: pointer;
   padding: 20px 30px;
   box-shadow: 0 1px 5px 0px rgba(71, 78, 83, 0.219);
+
 }
 .reviewCard:hover {
   transition: all 0.3s linear;
-  box-shadow: 0 1px 8px 0px rgba(71, 78, 83, 0.349);
+  box-shadow: rgba(0, 0, 0, 0.445) 0px 10px 20px -15px;
 }
 .cardHeader,
 .cardFooter {
@@ -83,3 +62,20 @@
   font-size: 16px;
   padding: 10px 0;
 }
+.swiper-container {
+  width: 100%;
+  background: transparent !important;
+  padding-bottom: 50px;
+ 
+}
+
+.swiper-slide {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  
+ 
+}
+
+ 

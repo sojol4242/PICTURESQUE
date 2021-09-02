@@ -6,8 +6,7 @@
   margin-top: 100px;
   position: relative;
   overflow: hidden;
-  /* background: url("../../../images/undraw_moments_0y20.svg");
-  position: relative; */
+  
 }
 .hero::after {
   content: " ";
@@ -44,15 +43,6 @@
   opacity: 1;
 
 }
-
-.hero-title {
-  margin-bottom: 10px;
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 1.5;
-  text-align: center;
-  text-transform: uppercase;
-}
 .hero-title-span {
   font-size: 40px;
   font-weight: 800;
@@ -61,12 +51,21 @@
   letter-spacing: 5px;
   text-transform: uppercase;
 }
+.hero-title {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .hero-words {
   font-size: 18px;
   line-height: 1;
   color:var(--primary-color);
   line-height: 1.5;
-  padding: 0 1rem; 
+  
   text-align: justify; 
 }
 .hero-btn {
@@ -94,7 +93,7 @@
     font-size: 24px;
   }
   .hero-title {
-     text-align: center;
+     text-align: justify;
     font-size: 18px;
   }
   .hero-words {

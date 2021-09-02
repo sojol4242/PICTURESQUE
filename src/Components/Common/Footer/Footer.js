@@ -18,10 +18,11 @@ const Footer = () => {
   const scrollTop = () => window["scrollTo"]({ top: 0, behavior: "smooth" });
   return (
     <section id="footer" className="container-fluid footer">
-      <div class="row py-5 px-2 mx-auto">
-        <div class="col-md-4 col-sm-12">
+      <div className="row py-5 px-2 mx-auto">
+        <div className="col-md-4 col-sm-12">
           <div className="leftTop">
             <div
+            title="www.picturesque.org"
               className="my-2"
               onClick={scrollTop}
               style={{
@@ -223,7 +224,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div class="row">
+      <div className="row">
         <div className="col-md-12">
           <SubFooter />
         </div>

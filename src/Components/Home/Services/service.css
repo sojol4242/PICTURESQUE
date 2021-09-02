@@ -151,8 +151,7 @@
 }
 
 .swiper-slide {
-  height: 100%;
-  width:100%;
+ 
   text-align: center;
   font-size: 18px;
   padding-bottom: 10px;
@@ -171,7 +170,7 @@
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  padding: 20px;
+  
   background: transparent !important;
   /* box-shadow: 0 1px 5px 0px rgba(71, 78, 83, 0.123); */
 }

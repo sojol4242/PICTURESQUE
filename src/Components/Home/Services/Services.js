@@ -8,8 +8,9 @@ import SwiperCore, { Autoplay, Pagination } from "swiper/core";
 
 const Services = () => {
   SwiperCore.use([Pagination, Autoplay]);
-
   const [newServices, setNewServices] = useState([]);
+  
+ 
 
   useEffect(() => {
     fetch("https://photography-app-2021.herokuapp.com/getNewServices")
@@ -31,37 +32,45 @@ const Services = () => {
         </div>
       </div>
 
-      <>
+     
         {
           newServices.length >0?(
             <Swiper
-            slidesPerView={"auto"}
+           
+            pagination={true}
+            loop= {true}
+            className="mySwiper"
+           
+            slidesPerView={3}
             breakpoints={{
-              320: {
-                slidesPerView: 1,
-                spaceBetween: 3,
-              },
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 10,
-              },
-              1024: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-              },
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 3,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
             }}
             autoplay={{
-              delay:5000,
-              disableOnInteraction: false,
+                "delay": 2500,
+                "disableOnInteraction": false,
             }}
             spaceBetween={10}
-            className="container"
+            // effect={"coverflow"}
+            grabCursor={true}
+            centeredSlides={true}
+           
           >
             {
               //
-              newServices.map((service,i) => (
+              newServices.map((service) => (
                 <SwiperSlide>
-                  <Service service={service} key={i} />
+                  <Service service={service} key={service._id} />
                 </SwiperSlide>
               ))
             }
@@ -71,13 +80,14 @@ const Services = () => {
             <img
               src="https://i.ibb.co/GJVBCfr/9313-loader.gif"
               alt="loader"
+              title="Please Wait"
               style={{ height: "200px", background: "transparent" }}
             />
           </div>
           )
         }
        
-      </>
+    
     </section>
   );
 };

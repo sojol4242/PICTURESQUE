@@ -10,29 +10,29 @@ import { faArrowAltCircleDown } from "@fortawesome/free-regular-svg-icons";
 const FreeQuestion = () => {
   const faqData = [
     {
-      id: 1,
+      id: 2141,
       header: "What is Picturesque?",
       desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum cupiditate et, quidem exercitationem delectus possimus optio obcaecati quod rerum? Adipisci!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum cupiditate et, quidem exercitationem delectus possimus optio obcaecati quod rerum? Adipisci!",
     },
     {
-      id: 2,
+      id:42124,
       header: "What is your company goal?",
       desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum cupiditate et, quidem exercitationem delectus possimus optio obcaecati quod rerum? Adipisci!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum cupiditate et, quidem exercitationem delectus possimus optio obcaecati quod rerum? Adipisci!",
     },
     {
-      id: 3,
+      id:1214,
       header: "How I choose a plan?",
       desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum cupiditate et, quidem exercitationem delectus possimus optio obcaecati quod rerum? Adipisci!",
     },
     {
-      id: 4,
+      id: 1981,
       header: "Is it good for production level photography?",
       desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum cupiditate et, quidem exercitationem delectus possimus optio obcaecati quod rerum? Adipisci!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum cupiditate et, quidem exercitationem delectus possimus optio obcaecati quod rerum? Adipisci!",
     },
   ];
 
   return (
-    <div className="container-fluid my-3 px-5 mx-auto">
+    <div className="container-fluid my-3  mx-auto">
       <div className="row">
         <div className="services_head col-md-12 text-center m-auto">
           <h2 className="title">
@@ -43,14 +43,14 @@ const FreeQuestion = () => {
       </div>
       <Accordion defaultActiveKey="0" className="py-2">
         {faqData.map((data) => (
-          <Card className="faqCard my-2">
+          <Card className="faqCard my-2" key={data.id}>
             <Accordion.Toggle
               as={Button}
               className="bg-transparent  faqHeader"
               eventKey={data.id}
             >
-              <Card.Header className="d-flex justify-content-between align-items-center text-uppercase text-justify">
-                <h6> {data.header}</h6>
+              <Card.Header className="d-flex justify-content-between align-items-center text-uppercase">
+                <h6 style={{fontSize:"14px",lineHeight:"1.8"}}> {data.header}</h6>
 
                 <p>
                   {" "}

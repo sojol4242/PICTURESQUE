@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import TableLoader from "../../../Common/TableLoader";
-import { Table } from "react-bootstrap";
+ 
 import Order from "./Order";
 import "./orders.css";
 const Orders = () => {
   const [allOrders, setAllOrders] = useState([]);
 
   useEffect(() => {
-    // fetch('https://picturesque-2021.herokuapp.com/getNewServices')
+   
     fetch("https://photography-app-2021.herokuapp.com/checkout")
       .then((res) => res.json())
       .then((data) => {
@@ -45,9 +45,7 @@ const Orders = () => {
               <th className="text-dark" scope="col">
                 Order Status
               </th>
-              {/* <th className="text-white" scope="col">Payment ID</th> */}
-
-              {/* <th className="text-secondary" scope="col">Email</th> */}
+            
             </tr>
           </thead>
           <tbody>
