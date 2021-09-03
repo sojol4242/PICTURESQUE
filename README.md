@@ -86,7 +86,7 @@ live site : https://photography-2021.web.app/ -->
 https://i.ibb.co/vqVSJL1/Screenshot-178.png
  -->
 <h5>Home-page</h5>
-<img src="https://i.ibb.co/FVTkLcp/Fire-Shot-Pro-Webpage-Screenshot-006-Picturesque-Your-Photographic-Partner-picturesque.png" alt="project-screenshot-home" title="home-page"/>
+<img src="https://i.ibb.co/4MTpQ9K/picturesque-8.jpg" alt="project-screenshot-home" title="home-page"/>
 <h5>Admin-form </h5>
 <img src="https://i.ibb.co/JsJRC18/Fire-Shot-Pro-Webpage-Screenshot-010-Picturesque-Your-Photographic-Partner-picturesque.png" alt="project-screenshot-admin" title="admin-form"/>
 
