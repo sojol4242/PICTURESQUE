@@ -23,37 +23,37 @@ You will also see any lint errors in the console.
  # Technology Used : (Frontend) 
 ```
 ```
-<ul>
-<li>React.js</li>
-<li>Bootstrap</li>
-<li>Font awesome</li>
-<li>A little bit of framer motion</li>
-<li>CSS</li>
-</ul>
+ 
+ 1. React.js 
+ 2. Bootstrap 
+ 3. Font awesome
+ 4. A little bit of framer motion
+ 5. CSS
+ 
 ```
 ```
 # Technology Used : (Backend) 
 ```
 ```
-<ul>
-<li>Mongodb for database</li>
-<li>Node.js</li>
-<li>Express.js</li>
-</ul>
+ 
+ 1. Mongodb for database 
+ 2. Node.js 
+ 3. Express.js 
+ 
 ```
 ```
 <h5>Motive : </h5>
 
 ```
 ```
-<ul>
-<li>Practice MERN Fundamental</li>
+ 
+ 1. Practice MERN Fundamental 
 
-<li>Deploy in Firebase & Heroku</li>
+ 2. Deploy in Firebase & Heroku 
 
-<li>React props,components,hooks,Context API</li>
+ 3. React props,components,hooks,Context API 
 
-<li>Firebase Authentication</li>
+ 4. Firebase Authentication 
 
 </ul>
 ```
