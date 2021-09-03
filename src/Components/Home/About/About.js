@@ -13,7 +13,7 @@ const About = () => {
     <section className="container-fluid about_Section" id="about">
       <div className="row about">
         <Fade duration={2500} left distance="140px">
-          <div className="col-md-6 col-sm-12 about-banner mx-auto">
+          <div className="col-md-6 col-sm-12 about-banner shadow-sm rounded mx-auto">
             <Carousel className="h-100 w-75 m-auto">
               {carousalData.map((carousal) => (
                 
@@ -22,7 +22,7 @@ const About = () => {
                     src={carousal.img}
                     className="img-fluid"
                     alt="about_Image"
-                    style={{ height: "100%", width: "100%",borderRadius:"10px"}}
+                    style={{ height: "300px", width: "400px",borderRadius:"10px"}}
                   />
                 </Carousel.Item>
               ))}

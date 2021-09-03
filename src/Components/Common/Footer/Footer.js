@@ -20,9 +20,9 @@ const Footer = () => {
     <section id="footer" className="container-fluid footer">
       <div className="row py-5 px-2 mx-auto">
         <div className="col-md-4 col-sm-12">
-          <div className="leftTop">
+          <div className="leftTop  text-center">
             <div
-            title="www.picturesque.org"
+              title="www.picturesque.org"
               className="my-2"
               onClick={scrollTop}
               style={{
@@ -86,32 +86,35 @@ const Footer = () => {
               className="mobileApp mt-4"
               style={{
                 display: "flex",
+                justifyContent:"flex-start",
                 alignItems: "center",
                 cursor: "pointer",
+
               }}
             >
               <FontAwesomeIcon
                 icon={faGooglePlay}
                 title="Android"
-                style={{ height: "70px", width: "60%", cursor: "pointer" }}
+                style={{ height: "50px",  width: "60px", cursor: "pointer" }}
               />
               <FontAwesomeIcon
                 icon={faAppStoreIos}
                 title="Android"
-                style={{ height: "70px", width: "60%", cursor: "pointer" }}
+                style={{ height: "50px", width: "60px", cursor: "pointer" }}
               />
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12 middle d-flex flex-column justify-content-center align-items-center my-5"
-     
-        >
-          <div className="usefulLinks">
-            <h6 className="text-uppercase"
-                style={{
-               borderBottom:"2px solid #fff"
-                }}
-            >Useful Links</h6>
+        <div class="usefulLinks col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center my-5">
+          <div className=" my-5">
+            <h6
+              className="text-uppercase"
+              style={{
+                borderBottom: "2px solid #fff",
+              }}
+            >
+              Useful Links
+            </h6>
             <div className="usefulLink d-flex flex-column justify-content-start align-items-start">
               <a
                 href="#"
@@ -224,8 +227,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <hr className="bg-white"/>
       <div className="row">
-        <div className="col-md-12">
+        <div className="col-md-12 my-2">
           <SubFooter />
         </div>
       </div>

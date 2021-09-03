@@ -2,7 +2,7 @@ import React, { useMemo, useState } from "react";
 import { useStripe, useElements, CardElement } from "@stripe/react-stripe-js";
 import { useHistory } from "react-router";
 import swal from "sweetalert";
-import './payment.css'
+import "./payment.css";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoneyCheckAlt } from "@fortawesome/free-solid-svg-icons";
@@ -28,7 +28,7 @@ const useOptions = () => {
   );
 
   return options;
-}
+};
 
 const PaymentCard = ({ handlePayment }) => {
   const history = useHistory();
@@ -67,38 +67,43 @@ const PaymentCard = ({ handlePayment }) => {
       setPaymentError(null);
       handlePayment(paymentMethod.id);
       swal("Success!", "Payment completed successfully!! 😃😃😃", "success");
-       
+
       history.replace("/");
     }
   };
   return (
     <>
-     <h4>Payment Form <FontAwesomeIcon icon={faMoneyCheckAlt}></FontAwesomeIcon></h4>
+      <h4>
+        Payment Form <FontAwesomeIcon icon={faMoneyCheckAlt}></FontAwesomeIcon>
+      </h4>
       <form onSubmit={handleSubmit}>
-
-        <CardElement   className="mt-3 cardElement"/>
-        {paymentError && <p   className="mt-3" style={{ color: "red" }}>{paymentError}</p>}
+        <CardElement className="mt-3 cardElement" />
+        {paymentError && (
+          <p className="mt-3" style={{ color: "red" }}>
+            {paymentError}
+          </p>
+        )}
         <motion.button
-                whileHover={{
-                  scale: 1.01,
-                  textShadow: "0px 0px 8px rgb(255,255,255)",
-                  boxShadow: "0px 0px 8px rgb(255,255,255)",
-                }}
-                disabled={!stripe}
-                className="checkBtn mt-3"
-                type="submit"
-              >
-               
-                Pay
-              </motion.button>
+          whileHover={{
+            scale: 1.01,
+            textShadow: "0px 0px 8px rgb(255,255,255)",
+            boxShadow: "0px 0px 8px rgb(255,255,255)",
+          }}
+          disabled={!stripe}
+          className="checkBtn mt-3"
+          type="submit"
+        >
+          Pay
+        </motion.button>
         {/* <button className="checkBtn" type="submit" disabled={!stripe}>
           Pay
         </button> */}
       </form>
-     
+
       {paymentSuccess && (
-        <p style={{ color: "green" }}>Your payment done successfully.
-        We will send you contact with you soon</p>
+        <p style={{ color: "green" }}>
+          Your payment done successfully. We will send you contact with you soon
+        </p>
       )}
     </>
   );

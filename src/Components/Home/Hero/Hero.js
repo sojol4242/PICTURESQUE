@@ -1,4 +1,6 @@
+/* eslint-disable react/jsx-no-duplicate-props */
 import React from "react";
+ 
 import Fade from "react-reveal/Fade";
 import Carousel from "react-bootstrap/Carousel";
 import { motion } from "framer-motion";
@@ -6,23 +8,21 @@ import Zoom from "react-reveal/Zoom";
 import ReactTypingEffect from "react-typing-effect";
 import carousalData from "../../../StaticData/CarousalData";
 import "./hero.css";
+import Qoutes from "../Qoutes";
 
 const Hero = () => {
   return (
-    <>
+ 
       <section className="container-fluid">
-    
         <Carousel className="w-100 m-auto">
           {carousalData.map((carousal) => (
             <Carousel.Item key={carousal._id}>
-            
               <Zoom duration={1000}>
                 <div className="row hero">
-                  <div className="col-md-12  col-sm-12 hero-content pt-1">
-                    <Fade duration={2000} right></Fade>
+                  <div className="col-md-12  col-sm-12 hero-content mt-5">
                     <p className="hero-title-span">
-                <ReactTypingEffect text={["Welcome To", "Picturesque"]} />
-              </p>
+                      <ReactTypingEffect text={["Welcome To", "Picturesque"]} />
+                    </p>
                     <Fade duration={4000} left>
                       <h2 className="hero-title">{carousal.title}</h2>
                     </Fade>
@@ -49,8 +49,9 @@ const Hero = () => {
             </Carousel.Item>
           ))}
         </Carousel>
+       
       </section>
-    </>
+     
   );
 };
 

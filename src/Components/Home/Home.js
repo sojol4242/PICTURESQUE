@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-duplicate-props */
 import React from "react";
 import Hero from "./Hero/Hero";
 import About from "./About/About";
@@ -10,6 +11,9 @@ import ScrollTop from "../Common/ScrollTop";
 import WorksGallery from "./Works/WorksGallery";
 import FreeQuestion from "./FreQuestion/FreeQuestion";
 import NavBar from "../Common/Header/NavBar";
+import Marquee from "react-fast-marquee";
+import Companies from "./Companies/Companies";
+import Qoutes from "./Qoutes";
 
 const Home = () => {
   return (
@@ -17,8 +21,12 @@ const Home = () => {
       <NavBar />
       <div className="container-fluid">
         <ScrollTop />
+        
         <Hero />
-        <About />
+
+        <Qoutes />
+
+        <About /> 
         <Services />
 
         {/* teams */}
@@ -29,8 +37,13 @@ const Home = () => {
         <FreeQuestion />
         {/* get in touch */}
         <Review />
+        {/* companies */}
+
+        <Companies />
+
         {/* Contact Us */}
         <Contact />
+
         {/* footer */}
       </div>
       <Footer />

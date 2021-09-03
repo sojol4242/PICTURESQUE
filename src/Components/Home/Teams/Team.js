@@ -13,8 +13,8 @@ const Team = ({ data, id }) => {
           return (
             <div key={index} className="col-md-4">
               <Fade left duration={1800} distance="140px">
-                <div className={`cardContents cardContents${id + 1}`}>
-                  <div className="cardContent">
+                <div className={`cardContents cardContents${id + 1}  shadow rounded`}>
+                  <div className="cardContent ">
                     <img src={img} alt={name} />
                     <h4 className="mt-2">{name}</h4>
    

@@ -20,3 +20,10 @@
 .siteName:hover {
   color: #fff;
 }
+@media screen and (max-width: 968px) {
+.usefulLinks{
+  justify-content: flex-start !important;
+  align-items: flex-end !important;
+}
+    
+ }

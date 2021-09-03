@@ -1,16 +1,14 @@
-
-
 .hero {
   width: 100%;
-  min-height:80vh;
-  margin-top: 100px;
+  min-height: 80vh;
+  height: 100%;
   position: relative;
   overflow: hidden;
-  
+ margin-top: 80px;
 }
 .hero::after {
   content: " ";
-  display: block;
+  display: inline-block;
   position: absolute;
   left: 0;
   top: 0;
@@ -31,17 +29,16 @@
 .hero-content {
   position: absolute;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   flex-direction: column;
-  align-items:center;
-  padding: 1rem;
+  align-items: center;
+ margin-top: -100px;
   opacity: 1;
   border-radius: 10px;
   top: 100px;
   height: 100%;
   z-index: 10000;
   opacity: 1;
-
 }
 .hero-title-span {
   font-size: 40px;
@@ -63,10 +60,10 @@
 .hero-words {
   font-size: 18px;
   line-height: 1;
-  color:var(--primary-color);
+  color: var(--primary-color);
   line-height: 1.5;
-  
-  text-align: justify; 
+
+  text-align: justify;
 }
 .hero-btn {
   background: transparent;
@@ -78,26 +75,29 @@
   padding: 5px 24px;
   background: var(--primary-color);
   color: #fff;
-  
 }
-
+.marqueeText{
+  margin-top: 50px;
+}
 @media (max-width: 768px) {
-  .hero{
+  .hero {
     height: 100%;
   }
   .hero-content {
-   top: 0;
-  
+    top: 0;
   }
   .hero-title-span {
     font-size: 24px;
   }
   .hero-title {
-     text-align: justify;
+    text-align: justify;
     font-size: 18px;
   }
   .hero-words {
-     text-align: justify;
+    text-align: justify;
     font-size: 16px;
+  }
+  .marqueeText{
+    margin-top: -120px;
   }
 }
