@@ -19,9 +19,9 @@ You will also see any lint errors in the console.
 <h4>Project name :  <small>Picturesque</small></h4>
 
 
-```
+ 
  # Technology Used : (Frontend) 
-```
+ 
 ```
  
  1. React.js 
@@ -30,10 +30,9 @@ You will also see any lint errors in the console.
  4. A little bit of framer motion
  5. CSS
  
-```
-```
+``` 
 # Technology Used : (Backend) 
-```
+ 
 ```
  
  1. Mongodb for database 
@@ -41,10 +40,10 @@ You will also see any lint errors in the console.
  3. Express.js 
  
 ```
-```
-<h5>Motive : </h5>
+ 
+# Motive : 
 
-```
+ 
 ```
  
  1. Practice MERN Fundamental 
@@ -54,8 +53,7 @@ You will also see any lint errors in the console.
  3. React props,components,hooks,Context API 
 
  4. Firebase Authentication 
-
-</ul>
+ 
 ```
 <!-- Client Side repo : https://github.com/Porgramming-Hero-web-course/complete-website-client-sojol4242
 Server Side repo : https://github.com/Porgramming-Hero-web-course/complete-website-server-sojol4242
@@ -73,6 +71,6 @@ https://i.ibb.co/vqVSJL1/Screenshot-178.png
 <h5>Admin-form </h5>
 <img src="https://i.ibb.co/JsJRC18/Fire-Shot-Pro-Webpage-Screenshot-010-Picturesque-Your-Photographic-Partner-picturesque.png" alt="project-screenshot-admin" title="admin-form"/>
 
-```
+ 
 # And many more.... 
-```
+ 
