@@ -22,36 +22,29 @@ You will also see any lint errors in the console.
 ```
  # Technology Used : (Frontend) 
 ```
+```
 <ul>
 <li>React.js</li>
-
-
 <li>Bootstrap</li>
-
 <li>Font awesome</li>
-
 <li>A little bit of framer motion</li>
-
 <li>CSS</li>
-
 </ul>
-
+```
 ```
 # Technology Used : (Backend) 
 ```
+```
 <ul>
 <li>Mongodb for database</li>
-
-
 <li>Node.js</li>
-
 <li>Express.js</li>
-
-
 </ul>
-
+```
+```
 <h5>Motive : </h5>
 
+```
 ```
 <ul>
 <li>Practice MERN Fundamental</li>
@@ -61,16 +54,6 @@ You will also see any lint errors in the console.
 <li>React props,components,hooks,Context API</li>
 
 <li>Firebase Authentication</li>
-
-</ul>
-<h5>I added this features : </h5>
-<ul>
-
-<Li>our works section </li>
-<Li>our clients section</li>
-<Li>Add transition at navbar</li>
-<li>Loading spiner</li>
-
 
 </ul>
 ```
