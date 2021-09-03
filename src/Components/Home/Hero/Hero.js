@@ -8,7 +8,7 @@ import Zoom from "react-reveal/Zoom";
 import ReactTypingEffect from "react-typing-effect";
 import carousalData from "../../../StaticData/CarousalData";
 import "./hero.css";
-import Qoutes from "../Qoutes";
+ 
 
 const Hero = () => {
   return (

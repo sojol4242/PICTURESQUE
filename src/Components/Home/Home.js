@@ -11,7 +11,6 @@ import ScrollTop from "../Common/ScrollTop";
 import WorksGallery from "./Works/WorksGallery";
 import FreeQuestion from "./FreQuestion/FreeQuestion";
 import NavBar from "../Common/Header/NavBar";
-import Marquee from "react-fast-marquee";
 import Companies from "./Companies/Companies";
 import Qoutes from "./Qoutes";
 
@@ -21,12 +20,12 @@ const Home = () => {
       <NavBar />
       <div className="container-fluid">
         <ScrollTop />
-        
+
         <Hero />
 
         <Qoutes />
 
-        <About /> 
+        <About />
         <Services />
 
         {/* teams */}

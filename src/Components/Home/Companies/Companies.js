@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-duplicate-props */
 /* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import Marquee from "react-fast-marquee";
@@ -34,7 +35,7 @@ const companiesData = [
   },
   {
     id: 61,
-    img: "https://i.ibb.co/pLHDyMd/1-kg5-JVNg-H-o-Jmw-CBSA0-NAXA-removebg-preview.png",
+    img: "https://i.ibb.co/MfPwKy0/download.png",
     title: "Uber",
     link: "https://www.uber.com/",
   },
@@ -42,15 +43,15 @@ const companiesData = [
 
 const Companies = () => {
   return (
-    <div className="py-5 container-fluid">
+    <div className="pt-5 container-fluid">
       <h2
         className="text-center about_sub_title py-5"
         style={{ fontSize: "24px" }}
       >
         Recently We Worked For
       </h2>
-      <Marquee pauseOnClick={true} pauseOnClick={true} speed={20}>
-        <div className="container d-flex justify-content-around align-items-center">
+      <Marquee pauseOnClick={true} pauseOnClick={true} speed={30}>
+        <div className="container-fluid d-flex justify-content-around align-items-center">
           {companiesData.map((companies) => (
             <a
               href={companies.link}
@@ -64,20 +65,25 @@ const Companies = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 textDecoration: "none",
-                height: "120px",
-                maxWidth: "8rem",
+                height: "150px",
+                maxWidth: "12rem",
                 width: "100%",
                 borderRadius: "10px",
                 border:"none",
-                margin:"0 20px"
+                margin:"20px"
               }}
             >
               <img
                 src={companies.img}
                 title={companies.title}
                 alt={companies.title}
-                className="px-2 img-fluid"
-             
+                className="p-1 img-fluid h-75"
+                style={{
+                 
+                  borderRadius: "10px",
+                  border:"none",
+                  
+                }}
              
               />
               <p style={{ color: "#131127", fontWeight: "700" }}>

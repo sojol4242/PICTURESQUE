@@ -4,7 +4,7 @@
   height: 100%;
   position: relative;
   overflow: hidden;
- margin-top: 80px;
+  margin-top: 80px;
 }
 .hero::after {
   content: " ";
@@ -32,7 +32,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
- margin-top: -100px;
+  
   opacity: 1;
   border-radius: 10px;
   top: 100px;

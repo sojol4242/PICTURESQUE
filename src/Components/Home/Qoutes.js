@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-duplicate-props */
 import React from "react";
 import Marquee from "react-fast-marquee";
 const qoutes = [
@@ -25,7 +26,9 @@ const Qoutes = () => {
         pauseOnClick={true}
         pauseOnClick={true}
         speed={20}
-       
+        style={{
+        background:"transparent !important"
+        }}
       >
         {qoutes.map((qoute) => (
           <p

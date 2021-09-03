@@ -38,10 +38,10 @@ const ProviderLogin = () => {
     });
   };
   return (
-    <>
-      <div className="container-fluid">
-        <div className="row auth">
-          <Fade duration={2000} left >
+  
+   <div className="container">
+   <div className="row auth">
+          <Fade duration={2000} left>
             <div className="col-md-4 col-lg-4 col-sm-12 mx-auto auth-left">
               <p className="hero-title-span">
                 <ReactTypingEffect text={["Welcome To", "Picturesque"]} />
@@ -57,17 +57,20 @@ const ProviderLogin = () => {
                   alt="Google"
                 />
                 <span className="icon-text">Google login</span>
-               
               </div>
-              <p className="mt-3">Back to landing page <Link to="/home">wwww.picturesque.org</Link> </p>
+              <p className="mt-3">
+                Back to landing page{" "}
+                <Link to="/home">wwww.picturesque.org</Link>{" "}
+              </p>
             </div>
           </Fade>
           <Fade duration={2000} right>
             <div className="col-md-6 col-lg-6 col-sm-12 mx-auto auth-right"></div>
           </Fade>
-        </div>
+        
       </div>
-    </>
+   </div>
+    
   );
 };
 

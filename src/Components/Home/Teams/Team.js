@@ -5,16 +5,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Fade from "react-reveal/Fade";
 import "./team.css";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import './team.css';
 const Team = ({ data, id }) => {
   return (
     <Tab.Pane eventKey={id + 1}>
-      <div className="row">
+      <div className="container-fluid my-3 teamCards">
         {data.map(({ img, name, linkedin, position, github ,phone}, index) => {
           return (
-            <div key={index} className="col-md-4">
+             
               <Fade left duration={1800} distance="140px">
-                <div className={`cardContents cardContents${id + 1}  shadow rounded`}>
-                  <div className="cardContent ">
+                <div key={index} className={`cardContents cardContents${id+1} rounded h-100 m-3`}  
+
+                >
+                  <div className="cardContent">
                     <img src={img} alt={name} />
                     <h4 className="mt-2">{name}</h4>
    
@@ -32,7 +35,7 @@ const Team = ({ data, id }) => {
                   </div>
                 </div>
               </Fade>
-            </div>
+       
           );
         })}
       </div>
