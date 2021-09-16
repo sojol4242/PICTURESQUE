@@ -6,12 +6,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-## clone the repo on your system 
-### `git clone`
-### `cd PICTURESQUE`
-### `npm install`
-### `npm start`
-
+## `clone the repo on your system`
+```bash
+git clone
+cd PICTURESQUE
+npm install
+npm start
+```
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
@@ -62,7 +63,10 @@ You will also see any lint errors in the console.
 <!-- Client Side repo : https://github.com/Porgramming-Hero-web-course/complete-website-client-sojol4242
 Server Side repo : https://github.com/Porgramming-Hero-web-course/complete-website-server-sojol4242
 live site : https://photography-2021.web.app/ -->
-
+### `project live site ` 
+```link
+ https://photography-2021.web.app/
+```
 <strong>project live site - </strong> <a href="https://photography-2021.web.app/">Live</a> <br/>
 <strong>BackEnd repo - </strong> <a href="https://github.com/Porgramming-Hero-web-course/complete-website-server-sojol4242">Backend</a>
 
