@@ -60,15 +60,10 @@ You will also see any lint errors in the console.
  4. Firebase Authentication 
  
 ```
-<!-- Client Side repo : https://github.com/Porgramming-Hero-web-course/complete-website-client-sojol4242
-Server Side repo : https://github.com/Porgramming-Hero-web-course/complete-website-server-sojol4242
-live site : https://photography-2021.web.app/ -->
-### `project live site ` 
-```link
- https://photography-2021.web.app/
-```
+ 
+### `live site` 
 <strong>project live site - </strong> <a href="https://photography-2021.web.app/">Live</a> <br/>
-<strong>BackEnd repo - </strong> <a href="https://github.com/Porgramming-Hero-web-course/complete-website-server-sojol4242">Backend</a>
+<strong>Server - </strong> <a href="https://photography-app-2021.herokuapp.com/getNewServices">server</a>
 
 <h3>project-screenshot</h3>
 <!-- 
