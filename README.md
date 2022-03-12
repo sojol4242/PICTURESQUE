@@ -64,16 +64,14 @@ You will also see any lint errors in the console.
 ### `live site` 
 <strong>project live site - </strong> <a href="https://photography-2021.web.app/">Live</a> <br/>
 <strong>Server - </strong> <a href="https://photography-app-2021.herokuapp.com/getNewServices">server</a>
-https://i.ibb.co/6Xp7dsD/Fire-Shot-Capture-017-Multi-Device-Website-Mockup-Generator-techsini-com.png
+
 <h3>project-screenshot</h3>
 <!-- 
 https://i.ibb.co/vqVSJL1/Screenshot-178.png
  -->
-<h5>Home-page</h5>
-<img src="https://i.ibb.co/4MTpQ9K/picturesque-8.jpg" alt="project-screenshot-home" title="home-page"/>
-<h5>Admin-form </h5>
-<img src="https://i.ibb.co/JsJRC18/Fire-Shot-Pro-Webpage-Screenshot-010-Picturesque-Your-Photographic-Partner-picturesque.png" alt="project-screenshot-admin" title="admin-form"/>
-
+ ### Responsive Views
+ 
+![Landing page screenshot](https://i.ibb.co/6Xp7dsD/Fire-Shot-Capture-017-Multi-Device-Website-Mockup-Generator-techsini-com.png)
  
 # And many more.... 
  
