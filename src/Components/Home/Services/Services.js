@@ -9,15 +9,12 @@ import SwiperCore, { Autoplay, Pagination } from "swiper/core";
 const Services = () => {
   SwiperCore.use([Pagination, Autoplay]);
   const [newServices, setNewServices] = useState([]);
-  
- 
 
   useEffect(() => {
     fetch("https://photography-app-2021.herokuapp.com/getNewServices")
       .then((res) => res.json())
       .then((data) => {
         setNewServices(data);
- 
       });
   }, []);
 
@@ -32,62 +29,54 @@ const Services = () => {
         </div>
       </div>
 
-     
-        {
-          newServices.length >0?(
-            <Swiper
-           
-            pagination={true}
-            loop= {true}
-            className="mySwiper"
-           
-            slidesPerView={3}
-            breakpoints={{
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 3,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 10,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                },
-            }}
-            autoplay={{
-                "delay": 2500,
-                "disableOnInteraction": false,
-            }}
-            spaceBetween={10}
-            // effect={"coverflow"}
-            grabCursor={true}
-            centeredSlides={true}
-           
-          >
-            {
-              //
-              newServices.map((service) => (
-                <SwiperSlide>
-                  <Service service={service} key={service._id} />
-                </SwiperSlide>
-              ))
-            }
-          </Swiper>
-          ):(
-            <div className="container d-flex justify-content-center align-items-center">
-            <img
-              src="https://i.ibb.co/GJVBCfr/9313-loader.gif"
-              alt="loader"
-              title="Please Wait"
-              style={{ height: "200px", background: "transparent" }}
-            />
-          </div>
-          )
-        }
-       
-    
+      {newServices.length > 0 ? (
+        <Swiper
+          pagination={true}
+          loop={true}
+          className="mySwiper"
+          slidesPerView={3}
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 3,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+          }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          spaceBetween={10}
+          // effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+        >
+          {
+            //
+            newServices.map((service) => (
+              <SwiperSlide>
+                <Service service={service} key={service._id} />
+              </SwiperSlide>
+            ))
+          }
+        </Swiper>
+      ) : (
+        <div className="container d-flex justify-content-center align-items-center">
+          <img
+            src="https://i.ibb.co/GJVBCfr/9313-loader.gif"
+            alt="loader"
+            title="Please Wait"
+            style={{ height: "200px", background: "transparent" }}
+          />
+        </div>
+      )}
     </section>
   );
 };

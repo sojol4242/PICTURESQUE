@@ -18,13 +18,15 @@
 }
 
 .service {
-  height: 450px;
-  width: 400px;
+  height: 400px;
+  width: 300px;
   position: relative;
-  border-radius: 10px;
-  box-shadow: 0 1px 5px 0px rgba(71, 78, 83, 0.336);
+  border-radius: 6px;
+  box-shadow: 0 1px 5px 0px rgba(130, 130, 130, 0.264);
+  border: none !important;
   cursor: pointer;
 }
+
 .service:before {
   content: " ";
   position: absolute;
@@ -34,16 +36,17 @@
   width: 100%;
   height: 100%;
   clip-path: circle(150px at 80% 20%);
-  transition: all 0.3s ease;
+  transition: all 0.3s linear;
   border-radius: 20px;
 }
+
 .service:hover:before {
   clip-path: circle(85% at 80% -20%);
   border-radius: 20px;
 }
 .service:hover {
-  transition: all 0.8s linear;
-  box-shadow: 0 1px 8px 0px rgba(71, 78, 83, 0.473);
+  transition: all 0.2s linear;
+  box-shadow: 0 1px 8px 0px rgba(194, 203, 210, 0.473);
 }
 /* .service:after {
     content: "Service";
@@ -52,33 +55,23 @@
     left: -20%;
   
   } */
-.service .serviceImg {
-  position: absolute;
-  top: 50%;
-  /* left: -50%; */
-  transform: translateY(-50%);
-  z-index: 1000;
-  width: 100%;
-  transition: all 0.3s ease;
-  height: 220px;
-}
-.service:hover .serviceImg {
+
+/* .service:hover .serviceImg {
   top: 0%;
   transform: translateY(12%);
-}
+} */
 .service .serviceImg img {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   width: 200px;
   transform: translate(-50%, -50%);
 }
 .service .serviceContent {
   position: absolute;
-
   bottom: 0;
   width: 100%;
-  height: 100px;
+  height: 80px;
   transition: 1s;
   z-index: 10;
   text-align: center;
@@ -89,14 +82,14 @@
   height: 150px;
   opacity: 1;
   visibility: visible;
-  transition-delay: 0.5s;
+  /* transition-delay: 0.5s; */
 }
 .service .serviceContent > h2 {
   text-transform: uppercase;
   position: relative;
   font-weight: 600;
-  font-size: 18px;
- 
+  font-size: 16px;
+
   color: var(--primary-color);
 }
 /* .service .serviceContent > p {
@@ -108,7 +101,7 @@
   justify-content: center;
   align-items: center;
   padding: 5px 20px;
-  transition: all 0.5s;
+  /* transition: all 0.5s; */
 }
 .service .serviceContent .servicePrice h3 {
   padding-right: 5px;
@@ -119,7 +112,7 @@
 }
 .service .serviceContent .servicePrice .price {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -134,14 +127,14 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
-  font-size: 16px;
-  transition: 1s;
+  font-size: 12px;
+  /* transition: 1s; */
   border: 1px solid #fff;
 }
 .service:hover .serviceContent .addBtn {
   opacity: 1;
-  transform: translateY(0px);
-  transition-delay: 0.5s;
+  transform: translateY(-10px);
+  /* transition-delay: 0.5s; */
 }
 
 .swiper-container {
@@ -151,7 +144,6 @@
 }
 
 .swiper-slide {
- 
   text-align: center;
   font-size: 18px;
   padding-bottom: 10px;
@@ -170,7 +162,7 @@
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  
+
   background: transparent !important;
   /* box-shadow: 0 1px 5px 0px rgba(71, 78, 83, 0.123); */
 }
@@ -183,11 +175,11 @@
 } */
 
 .swiper-slide:nth-child(2n) {
-  width:100%;
+  width: 100%;
 }
 
 .swiper-slide:nth-child(3n) {
-  width:100%;
+  width: 100%;
 }
 /* @media (max-width: 425px) {
    
